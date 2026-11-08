@@ -10,3 +10,18 @@ dialog{border:1px solid var(--line);border-radius:4px;padding:30px;max-width:660
 @media(max-width:360px){.site-header nav{gap:11px 15px}.site-header nav a{font-size:13px}.biography h1{font-size:43px}.contact-aside{grid-template-columns:100px minmax(0,1fr);gap:18px}.portrait{width:100px}.contact-aside h2{font-size:21px}.contact-aside p{font-size:14px}.education-item{grid-template-columns:80px minmax(0,1fr);gap:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{size:A4;margin:17mm}.site-header,.site-footer,.page-nav,.profile-links,.js-only,.paper-links,dialog,.skip-link,.button,.cv-end a{display:none!important}body{font:10pt/1.45 Arial,sans-serif;color:#000}.wrap,.detail-page{width:100%;max-width:none;padding:0}.page-heading{margin-bottom:15pt}.page-heading h1{font-size:25pt}.page-heading p{font-size:15pt}.cv-section{padding-top:17pt}.cv-section>h2{font-size:16pt;margin-bottom:9pt;break-after:avoid}.cv-entry{grid-template-columns:105pt 1fr;gap:13pt;padding:10pt 0;break-inside:avoid}.cv-entry h3,.cv-entry p,.cv-entry li,.cv-entry .date,.education-item h3,.education-item p,.education-item .date{font-size:10pt}.education-item{break-inside:avoid;padding:9pt 0;grid-template-columns:105pt 1fr;gap:13pt}.publication{break-inside:avoid;padding:10pt 0;grid-template-columns:35pt 1fr;gap:10pt}.publication h3{font-size:11pt}.authors,.venue,.paper-summary,.conference-row p,.conference-row h3,.method h3,.method p{font-size:10pt}.conference-row{break-inside:avoid;grid-template-columns:35pt 1fr;gap:10pt}.manuscripts li,.method{break-inside:avoid}.manuscripts h3{font-size:11pt}h2,h3{break-after:avoid}p,li{orphans:3;widows:3}a{color:#000;text-decoration:none}.under-review{padding-top:12pt}.under-review h2{font-size:16pt}.subheading{font-size:13pt}.review-journals,.dissertation,.under-review>.muted{font-size:10pt}.cv-end{font-size:9pt}.muted,.date{color:#444}}
+
+/* Shared navigation and Chinese typography. No remote fonts are required. */
+.site-header nav .language-switch{border:1px solid var(--line);border-radius:4px;padding:5px 10px;white-space:nowrap;text-decoration:none;line-height:1.4}
+.language-switch:hover{background:#f2f6f3}
+.translated-title{display:block;margin-top:.45em;font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;font-size:.78em;font-weight:400;line-height:1.7;color:var(--muted)}
+.cv-name{font-size:24px;margin-top:-14px;margin-bottom:20px}
+html[lang="zh-Hans"] body{font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.8}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] h3,html[lang="zh-Hans"] .wordmark{font-family:Georgia,"Noto Serif CJK SC","Songti SC",SimSun,serif}
+html[lang="zh-Hans"] .biography h1{letter-spacing:.06em}
+html[lang="zh-Hans"] .chinese-name{font-family:Georgia,serif;letter-spacing:0}
+html[lang="zh-Hans"] .publication h3,html[lang="zh-Hans"] .manuscripts h3{line-height:1.45}
+html[lang="zh-Hans"] .contact-aside p{line-height:1.8}
+html[lang="zh-Hans"] .conference-title{line-height:1.65}
+@media(min-width:1181px){.site-header nav{gap:20px}.site-header nav a{font-size:15px}}
+@media(max-width:760px){html[lang="zh-Hans"] .biography>p:not(.position):not(.supervisor){line-height:1.9}.translated-title{font-size:.82em}.site-header nav .language-switch{padding:3px 9px}.cv-name{font-size:20px}}

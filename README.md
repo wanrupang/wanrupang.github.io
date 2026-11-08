@@ -1,6 +1,6 @@
 # Wanru Pang — Academic website
 
-A portable, responsive academic website with six static pages and a downloadable full CV. The public pages contain no GitHub links, trackers, remote fonts, or runtime API keys.
+A portable, responsive academic website with six English pages, six corresponding Simplified Chinese pages, and a downloadable full CV. The public pages contain no GitHub links, trackers, remote fonts, or runtime API keys.
 
 ## Pages
 
@@ -13,11 +13,13 @@ A portable, responsive academic website with six static pages and a downloadable
 
 ## Preview and build
 
-Open `index.html` directly, or run `npm run build` and `npm start`. The server prints `http://127.0.0.1:4173` and binds only to this computer. Run `npm run check` to check all six pages, assets, cross-page anchors and PDF freshness. Node.js 20+ is sufficient; the website has no npm dependencies.
+Run `npm run build` and `npm start`. The server prints `http://127.0.0.1:4173` and binds only to this computer. Run `npm run check` to check all twelve pages, language switches, original publication/conference titles, assets, cross-page anchors and PDF freshness. Node.js 20+ is sufficient; the website has no npm dependencies.
+
+Each page has a Chinese/English switch linking to its matching page. The Chinese pages are under `zh/`; the switch also preserves section anchors when JavaScript is available. All content and navigation render without JavaScript. Chinese pages retain English paper and conference titles, followed by Chinese translations in parentheses. Author lists, journal names, DOIs and BibTeX remain in their original form. The downloadable CV is the English PDF and is labelled accordingly on Chinese pages.
 
 ## Maintain content
 
-Edit `content/profile.json` for the biography, education, supervisor, projects, conferences, service, awards and methods. Edit `content/publications.json` for papers. Preserve author order and keep Under review manuscripts separate from published papers. The PhD supervisor, Prof. Xinhua Zhu, was explicitly confirmed by the owner on 7 November 2026.
+Edit `content/profile.json` for the biography, education, supervisor, projects, conferences, service, awards and methods. Edit `content/publications.json` for papers. Maintain corresponding Simplified Chinese translations in `content/zh.json`: profile arrays follow the English array order, while papers are keyed by their stable IDs. `scripts/render.mjs` generates both languages from shared templates. Preserve author order and keep Under review manuscripts separate from published papers. The PhD supervisor, Prof. Xinhua Zhu, was explicitly confirmed by the owner on 7 November 2026.
 
 After changing either content file, regenerate the PDF with Python and ReportLab, then rebuild and check:
 
@@ -33,9 +35,11 @@ Commit source, generated root HTML, `sitemap.xml`, citations and the PDF togethe
 
 ## Hosting and search
 
-Source repository: https://github.com/benmenglyu/pangwanru. The website is configured for https://benmenglyu.github.io/pangwanru/. In repository Settings → Pages, select Deploy from a branch, choose `main` and `/(root)`, then save. After the initial setup, pushes to `main` automatically publish the generated website. `.nojekyll` keeps the plain HTML, CSS, JavaScript and PDF files unchanged. The account's existing homepage at the domain root is a separate repository.
+Source repository: https://github.com/wanrupang/wanrupang.github.io. The website is configured for https://wanrupang.github.io/ and its Chinese version for https://wanrupang.github.io/zh/. The owner authorized renaming the new account `wrpang` to `wanrupang`; its GitHub account ID remains 218595212. The repository was created by importing the complete source history. In repository Settings → Pages, select Deploy from a branch, choose `main` and `/(root)`, then save. After setup, pushes to `main` automatically publish the generated website. `.nojekyll` keeps the plain HTML, CSS, JavaScript and PDF files unchanged.
 
-The current publishing route uses GitHub Pages only; the previous Sites configuration is unused. Relative asset and navigation links support the `/pangwanru/` project path. `siteUrl` enables canonical URLs, Open Graph URLs, Person structured data and a six-page sitemap. Setting it to an empty string disables indexing for private previews. The project's `robots.txt` is supplied for portability; on GitHub project sites, crawler policy comes from the account domain's root `robots.txt`.
+The publishing route uses GitHub Pages only; the previous Sites configuration is unused. Relative asset and navigation links work at the new account's domain root. `siteUrl` enables canonical URLs, Open Graph URLs, Person structured data, reciprocal language alternatives and a twelve-page sitemap. Setting it to an empty string disables indexing for private previews. The root `robots.txt` allows crawling and points to the sitemap.
+
+This is an independent copy of `benmenglyu/pangwanru`, prepared from source commit `3078ef24ed067a99a11a98b2ccbc5f76442b0c63`. The `benmenglyu` account and its existing websites must remain unchanged. Do not transfer or rename the source repository. If the new account uses a different username, update `siteUrl`, regenerate the PDF, rebuild all pages, and check them before publishing.
 
 GitHub source hosting does not determine the public address. A `.site` registration is a separate paid product; it is not supplied free by GitHub Pages or Cloudflare Pages. No domain was purchased. An owned custom domain can be attached later.
 
@@ -45,4 +49,4 @@ Google crawling/indexing is not guaranteed or instantaneous. After deployment, s
 
 The portrait is the owner's unretouched Google Scholar photo. Platform marks come from Simple Icons v16; see `assets/ASSET-SOURCES.txt`. The image-generation concepts guide layout only; real author order, contact details and education always come from the curated CV data. The complete confirmed PhD education and supervisor supersede any abbreviated concept text.
 
-Version 2 was checked in the Codex in-app browser at 320, 390, 768 and 1488 pixel widths, plus the user's desktop viewport. All six pages fit; header navigation, full-publication navigation, citation copy and PDF download worked, with no browser console errors. The downloaded PDF matched the built file; all seven pages were rendered and visually reviewed. White background, forest-green accents, serif heading hierarchy, date rails, portrait, platform marks and section order were compared with the visual references. The real photo and source data are preserved; invented addresses and author names in conceptual mockups are not used.
+The bilingual revision was checked in Chrome: all twelve pages rendered at a measured 341 CSS-pixel mobile viewport without horizontal overflow; desktop homepages were visually reviewed at 1339 and 2314 CSS pixels. Matching-page language navigation, Chinese citation copy/close, header navigation and PDF download were exercised with no console errors. Static checks cover every local link, section anchor, locale alternative, all original paper/conference titles and the PDF content fingerprint. The seven-page PDF was previously rendered and visually reviewed. White background, forest-green accents, serif headings, portrait, platform marks and section order are preserved.

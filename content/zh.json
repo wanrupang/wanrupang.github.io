@@ -1,0 +1,110 @@
+{
+  "profile": {
+    "title": "应用语言学博士候选人",
+    "department": "语言科学及科技学系",
+    "institution": "香港理工大学",
+    "educationIntro": "我拥有新加坡国立大学中国文化与语言硕士学位，以及中国社会科学院大学汉语言文学学士学位。",
+    "intro": "我关注身份认同、学习动机与语言如何共同影响多语学习者的读写能力发展。",
+    "bio": "我的研究以汉语作为第二语言的学习为中心，尤其关注双文化认同整合、二语自我以及阅读与写作评估。我结合质性研究与量化建模，探究学习者的经验及其随时间的发展。",
+    "visit": {"role":"访问研究生","institution":"不列颠哥伦比亚大学","dates":"2026年9月至12月"},
+    "research": [
+      {"title":"身份认同与学习动机","description":"多语情境中的双文化认同整合、理想二语自我与学习投入。"},
+      {"title":"读写能力与评估","description":"汉语二语阅读与写作、综合任务及语言能力发展。"},
+      {"title":"反馈与学习","description":"写作反馈、教师信念与情绪，以及课堂学习。"}
+    ],
+    "dissertation":"双文化认同整合与理想二语自我：二者的交互作用及其对香港汉语二语学习者写作质量的共同影响",
+    "education":[
+      {"detailDates":"2023年8月—2027年7月（预计）","degree":"应用语言学博士（在读）","institution":"香港理工大学","detail":"语言科学及科技学系"},
+      {"detailDates":"2021年8月—2022年6月","degree":"中国文化与语言硕士","institution":"新加坡国立大学","detail":"GPA：4.7/5.0 · 前5%"},
+      {"detailDates":"2017年9月—2021年7月","degree":"汉语言文学学士","institution":"中国社会科学院大学","detail":"GPA：3.58/4.0 · 前10%"}
+    ],
+    "experience":[
+      {"institution":"不列颠哥伦比亚大学","role":"国际访问研究生 · 语言与读写教育","description":"在 Prof. Guofang Li 指导下研究多语读写能力与家庭语言实践。"},
+      {"institution":"香港理工大学","role":"研究助理 · 汉语二语写作纵向研究项目","description":"混合方法研究、学校合作与研究团队协调。"},
+      {"institution":"新加坡国立大学","role":"研究助理 · 中文系与亚洲研究所","description":"口述历史、访谈与民族志田野研究。"}
+    ],
+    "projects":[
+      {"dates":"2026年9月至12月","title":"不列颠哥伦比亚省多语学习者的第一语言能力与英语阅读理解","institution":"不列颠哥伦比亚大学","role":"研究助理","funding":"加拿大社会科学与人文研究理事会","details":["围绕双语读写、家庭语言实践及家庭支持开展家长与儿童访谈。","完善访谈提纲，整理普通话访谈资料，为主题分析做准备。","观察主流课堂与传承语课堂中的语言使用及读写教学。"]},
+      {"dates":"2022年10月—2026年12月","title":"汉语二语综合写作中的动机、投入与任务表现：发展轨迹及纵向关联","institution":"香港理工大学","role":"研究助理 · 团队负责人","funding":"香港研究资助局优配研究金（GRF）","details":["协调多批次纵向混合方法研究，包括预测试、研究工具开发及校本数据收集。","制定访谈框架、半结构式提纲与编码方案；以英语访谈中学汉语二语学习者，并使用 NVivo 进行主题分析。","统筹四年间四个组别的问卷与写作任务、学校联络、写作评估及数据集整理。","招募并协调研究助理与学生助手，参与论文撰写。"]},
+      {"dates":"2022年10月—2023年8月","title":"大学生学术写作中的同伴发起与自我发起反馈","institution":"香港理工大学","role":"全职研究助理","details":["协助文献综述、数据收集、访谈及焦点小组研究。","协助转录与量化分析，包括验证性因子分析（CFA）及结构方程模型（SEM）。"]},
+      {"dates":"2022年5月—2023年4月","title":"系史口述历史项目（1976—1984）","institution":"新加坡国立大学","role":"兼职研究助理","details":["设计口述历史访谈流程，独立访谈五名校友，了解新加坡华文教育。","转录、核验及整理访谈资料，并协调项目会议。"]},
+      {"dates":"2022年4月至9月","title":"新加坡新冠疫情期间的社区关怀与宗教回应","institution":"新加坡国立大学亚洲研究所","role":"兼职研究助理","funding":"新加坡文化、社区及青年部","details":["协助面向庙宇管理者及成员的问卷调查、访谈与田野观察。","为疫情期间庙宇社区回应的研究报告提供质性资料与分析。"]},
+      {"dates":"2018年11月—2019年11月","title":"魔幻现实主义与中国当代小说","institution":"中国社会科学院大学","role":"研究团队负责人","details":["带领五人团队，独立研究中国寻根文学中的魔幻现实主义。","协调研究会议、综合研究发现并完成结项答辩。"]}
+    ],
+    "academicVisits":[
+      {"dates":"2026年9月至12月","title":"国际访问研究生","institution":"不列颠哥伦比亚大学","detail":"语言与读写教育系 · Prof. Guofang Li · 香港理工大学资助"},
+      {"dates":"2021年8月至10月","title":"暑期导师制课程","institution":"牛津大学","detail":"导师：Dr. Miriam Driessen"},
+      {"dates":"2021年7月","title":"研究生暑期学校","institution":"北京大学与浙江大学"},
+      {"dates":"2019年9月—2020年1月","title":"人文学院交换生","institution":"莱顿大学","detail":"中国社会科学院大学资助"},
+      {"dates":"2019年7月至8月","title":"哲学学院暑期学校","institution":"雅典国立卡波迪斯特里安大学","detail":"中国社会科学院大学资助"}
+    ],
+    "conferences":[
+      {"title":"双文化认同整合与理想二语自我：对多语香港汉语二语学习的影响","event":"美国教育研究协会年会","location":"美国洛杉矶","dates":"2026年4月8日至12日","format":"圆桌报告"},
+      {"title":"社会支持如何影响香港少数族裔学生的汉语二语学习动机","event":"美国教育研究协会年会","location":"美国洛杉矶","dates":"2026年4月8日至12日","format":"圆桌报告"},
+      {"title":"探究成长型思维与双文化认同对学生汉语二语学习投入的影响","event":"欧洲学习与教学研究协会会议","location":"奥地利格拉茨","dates":"2025年8月25日至29日","format":"论文报告"},
+      {"title":"家长态度对一年级汉语二语学习者自我信念与阅读表现的影响","event":"美国教育研究协会年会","location":"美国丹佛","dates":"2025年4月23日至27日","format":"海报展示"},
+      {"title":"借助人工智能提升硕士生的写作反馈能力：一项干预研究","event":"美国教育研究协会年会","location":"美国丹佛","dates":"2025年4月23日至27日","format":"圆桌报告"},
+      {"title":"青少年学习者的理想二语自我、投入维度与汉语水平：性别调节路径","event":"美国教育研究协会年会","location":"加拿大多伦多","dates":"2027年4月14日至18日","format":"海报投稿"}
+    ],
+    "teaching":[
+      {"dates":"2024年秋季与2026年春季","title":"汉语语言测试导论","role":"助教","institution":"香港理工大学","detail":"负责课程协调、作业评分与学生支持。课程教师：Prof. Tse Shek Kam 与 Prof. Xinhua Zhu。"},
+      {"dates":"2017年9月—2019年1月","title":"中小学生科学教育项目","role":"教师","institution":"北京","detail":"每周开展科学实践课程与实验，并提供个别反馈。"}
+    ],
+    "leadership":[
+      {"dates":"2022年10月至今","title":"研究项目与资助申请支持","institution":"香港理工大学","detail":"协助二十余项研究资助、教学发展与学术奖项申请，包括三项优配研究金（GRF）申请；参与研究设计、文献综述、方法与预算规划。"},
+      {"dates":"2022年10月至今","title":"招聘与研究团队协调","institution":"香港理工大学","detail":"在多个研究项目中招募、培训并协调二十余名研究助理及学生助手。"},
+      {"dates":"2021年1月至6月","title":"编辑实习生","institution":"社会科学文献出版社（北京）","detail":"参与甲骨文世界史系列的编辑与宣传工作，并协助年度译者论坛。"},
+      {"dates":"2019年4月—2020年9月","title":"团委书记兼学生会主席","institution":"中国社会科学院大学人文学院","detail":"统筹学术、文化及学生参与活动。"},
+      {"dates":"2018年9月—2020年9月","title":"学生辅导员","institution":"中国社会科学院大学历史学系","detail":"提供学业与生活支持，参与学生事务及发展活动。"},
+      {"dates":"2020年9月—2021年6月","title":"国际项目协调员兼“一带一路”项目实习生","institution":"中国社会科学院大学"},
+      {"dates":"2018年9月—2020年9月","title":"志愿者","institution":"中国社会科学院大学"},
+      {"dates":"2017年9月—2019年6月","title":"音乐社宣传部部长","institution":"中国社会科学院大学"}
+    ],
+    "awards":[
+      {"title":"研究生学术访问计划资助","institution":"香港理工大学"},
+      {"title":"研究生奖学金","institution":"香港理工大学"},
+      {"title":"中国文化与语言硕士课程优秀奖（2021/2022学年）","institution":"新加坡国立大学"},
+      {"title":"北京市优秀毕业论文","institution":"北京"},
+      {"title":"校级优秀毕业论文","institution":"中国社会科学院大学"},
+      {"title":"优秀学生干部","institution":"中国社会科学院大学"},
+      {"year":"2018年、2019年","title":"三等奖学金","institution":"中国社会科学院大学"},
+      {"year":"2018年、2019年","title":"共青团优秀个人","institution":"中国社会科学院大学"}
+    ],
+    "methods":[
+      {"title":"质性与混合研究方法","detail":"Q方法、半结构式访谈、主题分析、话语分析；NVivo、MAXQDA、KADE、EQ Web Sort。"},
+      {"title":"量化研究方法","detail":"结构方程模型（SEM）、验证性因子分析（CFA）、相关与回归分析；SPSS 与 R。"},
+      {"title":"语言能力","detail":"普通话（母语）、英语（雅思7.5）、粤语（基础）。"},
+      {"title":"其他技能","detail":"三维设计与打印、Photoshop、微信公众号运营。"}
+    ]
+  },
+  "papers": {
+    "pang2026reading":{"title":"家长阅读态度、一年级学生阅读自我信念与汉语二语阅读表现之间的相互关系","summary":"家庭阅读态度与儿童自我信念如何关联汉语二语阅读。"},
+    "zhang2026linguistic":{"title":"语言特征对不同第一语言背景学生汉语二语写作质量的影响","summary":"不同第一语言背景下汉语写作的词汇与句法特征。"},
+    "zhu2026selfesteem":{"title":"自尊在香港汉语二语学习者二语自我与写作表现关系中的中介作用","summary":"二语自我、自尊与汉语写作表现之间的关系。"},
+    "yao2025emotions":{"title":"探究中国大学英语写作教师在提供学生写作反馈时的情绪","summary":"教师写作反馈中的情绪维度。"},
+    "zhu2025review":{"title":"二十年来汉语综合写作评估研究的整合性综述","summary":"汉语综合写作评估研究的整合性回顾。"},
+    "cheong2025discussion":{"title":"大学生综合小组讨论的构念：小组讨论表现能在多大程度上反映综合小组讨论任务表现？","summary":"理解基于材料的小组讨论评估构念。"},
+    "yao2024mindsets":{"title":"探究中国大学英语写作教师对学生写作能力的思维观及其反馈实践","summary":"教师思维观及其写作反馈方式。"},
+    "xu2023selfefficacy":{"title":"自我效能对综合写作表现的影响：跨语言视角","summary":"中英文写作自我效能与综合写作表现。"},
+    "zhu2023competence":{"title":"探究语言能力、理想自我、学习投入与综合写作表现的关系：结构方程模型分析","summary":"综合写作中的语言能力、学习动机与学习投入。"},
+    "pang-longitudinal":{"title":"汉语二语写作发展中的语言知识与语言特征：香港纵向研究"},
+    "zhu-bicultural":{"title":"双文化认同整合在成长型思维与汉语二语学习投入关系中的中介作用"}
+  },
+  "ui": {
+    "Publications":"研究发表", "Academic experience":"学术经历", "Teaching & social service":"教学与社会服务", "Awards & honours":"奖励与荣誉", "Full CV":"完整简历",
+    "Education":"教育背景", "Research interests":"研究兴趣", "Selected publications":"精选发表", "Full publications":"全部研究发表", "View all experience":"全部学术经历", "Conference presentations":"会议报告", "All presentations":"全部会议报告",
+    "Currently":"目前", "Contact":"联系方式", "Get in touch":"联系我", "Skip to content":"跳至正文", "Main navigation":"主导航", "(expected)":"（预计）",
+    "Download CV (PDF)":"下载完整简历（英文 PDF）", "Download BibTeX":"下载 BibTeX", "Download all citations":"下载全部引用", "Cite":"引用", "Paper":"论文", "Close":"关闭", "Close citation":"关闭引用窗口", "Copy BibTeX":"复制 BibTeX", "Cite this paper":"引用本文", "(opens in a new tab)":"（在新标签页打开）",
+    "Peer-reviewed research on language, learning, and assessment.":"语言、学习与评估领域的同行评审研究。", "Peer-reviewed publications":"同行评审论文", "Under review":"审稿中（Under review）", "Manuscripts currently under peer review.":"以下论文目前处于同行评审阶段。", "· Corresponding author":"· 通讯作者", "Advance online publication":"网络优先发表", "First published online in 2025":"2025年网络首发",
+    "Research projects, academic visits, and conference presentations.":"研究项目、学术访问与会议报告。", "Research":"研究项目", "Visits & programmes":"访问与学术项目", "Conferences":"会议报告", "Research experience":"研究经历", "Visiting study & academic programmes":"访问学习与学术项目", "Conference submission · Under review":"会议投稿 · 审核中（Under review）", "Experience sections":"学术经历目录",
+    "Teaching, academic service, and contributions to research and university life.":"教学、学术服务以及研究与大学事务中的工作。", "Teaching & academic service":"教学与学术服务", "Invited journal peer review · 2023–present":"受邀期刊审稿 · 2023年至今", "Professional experience & leadership":"专业经历与领导力",
+    "Scholarships, research support, and academic recognition.":"奖学金、研究资助与学术荣誉。", "Awards":"奖励与荣誉", "Curriculum vitae":"完整学术简历", "CV sections":"简历目录", "Teaching & service":"教学与服务", "Methods":"研究方法", "Methods & languages":"研究方法与语言能力", "Doctoral dissertation":"博士论文", "Updated":"更新于", "November 2026":"2026年11月",
+    "Wanru Pang | Applied Linguistics":"庞琬茹 | 应用语言学", "Publications | Wanru Pang":"研究发表 | 庞琬茹", "Academic experience | Wanru Pang":"学术经历 | 庞琬茹", "Teaching & social service | Wanru Pang":"教学与社会服务 | 庞琬茹", "Awards & honours | Wanru Pang":"奖励与荣誉 | 庞琬茹", "Curriculum vitae | Wanru Pang":"完整学术简历 | 庞琬茹",
+    "Wanru Pang (庞琬茹), PhD candidate at The Hong Kong Polytechnic University. Research on identity, motivation and multilingual literacy development.":"庞琬茹，香港理工大学应用语言学博士候选人，研究身份认同、学习动机与多语读写能力发展。",
+    "Journal publications and manuscripts under review by Wanru Pang, with DOI links and downloadable citations.":"庞琬茹的期刊论文与审稿中论文，附 DOI 链接及可下载的引用信息。",
+    "Wanru Pang’s research projects, academic visits, exchange programmes, and conference presentations.":"庞琬茹的研究项目、学术访问、交流项目与会议报告。",
+    "Teaching, journal peer review, professional experience, and leadership by Wanru Pang.":"庞琬茹的教学、期刊审稿、专业经历与领导力。",
+    "Scholarships, research support, and academic awards received by Wanru Pang.":"庞琬茹获得的奖学金、研究资助与学术奖励。",
+    "Full academic curriculum vitae of Wanru Pang, with a downloadable PDF: education, research, publications, conferences, teaching, service, and honours.":"庞琬茹的完整学术简历，包括教育、研究、发表、会议、教学、服务与荣誉，并提供英文 PDF 下载。"
+  }
+}
