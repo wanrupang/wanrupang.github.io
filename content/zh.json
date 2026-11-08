@@ -1,14 +1,15 @@
 {
   "profile": {
     "title": "应用语言学博士候选人",
-    "department": "语言科学及科技学系",
+    "department": "语言科学与技术系",
     "institution": "香港理工大学",
-    "educationIntro": "我拥有新加坡国立大学中国文化与语言硕士学位，以及中国社会科学院大学汉语言文学学士学位。",
-    "bio": "我的研究以汉语作为第二语言的学习为中心，尤其关注双文化认同整合、二语自我以及阅读与写作评估。我结合质性研究与量化建模，探究学习者的经验及其随时间的发展。",
+    "educationIntro": "我拥有新加坡国立大学文学硕士（中国文化与语言）学位，以及中国社会科学院大学汉语言文学学士学位。",
+    "bio": "我的研究以中文作为第二语言的学习为中心，尤其关注双文化认同整合、二语自我以及阅读与写作评估。我结合质性与量化研究方法，探究学习者的经验及其随时间的发展。",
     "visit": {
-      "role": "访问研究生",
-      "institution": "不列颠哥伦比亚大学",
-      "dates": "2026年9月至12月"
+      "role": "国际访问研究生",
+      "institution": "英属哥伦比亚大学",
+      "dates": "2026年9月—12月",
+      "supervisor": "李国芳教授"
     },
     "research": [
       {
@@ -17,44 +18,44 @@
       },
       {
         "title": "读写能力与评估",
-        "description": "汉语二语阅读与写作、综合任务及语言能力发展。"
+        "description": "中文二语阅读与写作、综合任务及语言能力发展。"
       },
       {
         "title": "反馈与学习",
         "description": "写作反馈、教师信念与情绪，以及课堂学习。"
       }
     ],
-    "dissertation": "双文化认同整合与理想二语自我：二者的交互作用及其对香港汉语二语学习者写作质量的共同影响",
+    "dissertation": "双文化认同整合与理想二语自我：二者的相互作用及其对香港中文二语学习者写作质量的共同影响",
     "education": [
       {
         "detailDates": "2023年8月—2027年7月（预计）",
-        "degree": "应用语言学博士（在读）",
+        "degree": "博士研究生（应用语言学）",
         "institution": "香港理工大学",
-        "detail": "语言科学及科技学系"
+        "detail": "语言科学与技术系"
       },
       {
-        "detailDates": "2021年8月—2022年6月",
-        "degree": "中国文化与语言硕士",
+        "detailDates": "2021年7月—2022年7月",
+        "degree": "文学硕士（中国文化与语言，MACCL）",
         "institution": "新加坡国立大学",
-        "detail": "GPA：4.7/5.0 · 前5%"
+        "detail": "中文系；GPA：4.7/5（前5%）"
       },
       {
         "detailDates": "2017年9月—2021年7月",
         "degree": "汉语言文学学士",
         "institution": "中国社会科学院大学",
-        "detail": "GPA：3.58/4.0 · 前10%"
+        "detail": "中文系；GPA：3.58/4（前10%）"
       }
     ],
     "experience": [
       {
-        "institution": "不列颠哥伦比亚大学",
-        "role": "国际访问研究生 · 语言与读写教育",
-        "description": "在 Prof. Guofang Li 指导下研究多语读写能力与家庭语言实践。"
+        "institution": "英属哥伦比亚大学",
+        "role": "国际访问研究生 · 语言与读写教育系",
+        "description": "在李国芳教授指导下研究多语学习者的双语读写能力发展与家庭语言实践。"
       },
       {
         "institution": "香港理工大学",
-        "role": "研究助理 · 汉语二语写作纵向研究项目",
-        "description": "混合方法研究、学校合作与研究团队协调。"
+        "role": "研究助理 · 中文二语综合写作纵向研究项目",
+        "description": "纵向混合研究、学校现场数据收集与研究团队协调。"
       },
       {
         "institution": "新加坡国立大学",
@@ -64,84 +65,91 @@
     ],
     "projects": [
       {
-        "dates": "2026年9月至12月",
-        "title": "不列颠哥伦比亚省多语学习者的第一语言能力与英语阅读理解",
-        "institution": "不列颠哥伦比亚大学",
+        "dates": "2026年9月—12月",
+        "title": "不列颠哥伦比亚省小学高年级多语学习者的第一语言水平与英语阅读理解的关系研究",
+        "institution": "英属哥伦比亚大学",
         "role": "研究助理",
         "funding": "加拿大社会科学与人文研究理事会",
         "details": [
-          "围绕双语读写、家庭语言实践及家庭支持开展家长与儿童访谈。",
-          "完善访谈提纲，整理普通话访谈资料，为主题分析做准备。",
-          "观察主流课堂与传承语课堂中的语言使用及读写教学。"
-        ]
+          "对家长和儿童开展半结构式访谈，考察双语读写能力发展、家庭语言实践，以及家庭对第一语言和第二语言学习的支持；转写并核查普通话访谈，为主题分析准备质性数据。",
+          "协助审阅并修订家长及儿童访谈提纲，并确保其与项目的纵向混合研究设计相一致。",
+          "开展课堂观察，记录多语学习者在主流教育及母语学习情境中的语言使用与读写教学情况。"
+        ],
+        "supervisor": "李国芳教授"
       },
       {
         "dates": "2022年10月—2026年12月",
-        "title": "汉语二语综合写作中的动机、投入与任务表现：发展轨迹及纵向关联",
+        "title": "非华语学生中文二语综合写作的动机、投入与任务表现：发展轨迹及纵向关联",
         "institution": "香港理工大学",
-        "role": "研究助理 · 团队负责人",
+        "role": "研究助理（团队负责人）",
         "funding": "香港研究资助局优配研究金（GRF）",
         "details": [
-          "协调多批次纵向混合方法研究，包括预测试、研究工具开发及校本数据收集。",
-          "制定访谈框架、半结构式提纲与编码方案；以英语访谈中学汉语二语学习者，并使用 NVivo 进行主题分析。",
-          "统筹四年间四个组别的问卷与写作任务、学校联络、写作评估及数据集整理。",
-          "招募并协调研究助理与学生助手，参与论文撰写。"
-        ]
+          "统筹中文二语综合写作纵向混合研究项目的实施，负责预测试、研究工具开发、学校现场数据收集，以及质性和量化的分析及协调工作。",
+          "负责质性研究部分，制定访谈框架、半结构式访谈提纲及编码方案；用英语对以中文为第二语言的中学生开展深度访谈，并使用 NVivo 进行主题分析。",
+          "负责量化研究部分，设计问卷及综合写作任务，协调历时四年的数据收集，联系参与学校，评定写作任务，清理数据集并协助数据分析。",
+          "目前正在撰写期刊论文，报告项目的质性与量化研究结果。"
+        ],
+        "supervisor": "祝新华教授"
       },
       {
         "dates": "2022年10月—2023年8月",
-        "title": "大学生学术写作中的同伴发起与自我发起反馈",
+        "title": "大学生学术写作中同伴发起与自我发起的反馈：反馈模式与反馈策略",
         "institution": "香港理工大学",
         "role": "全职研究助理",
         "details": [
-          "协助文献综述、数据收集、访谈及焦点小组研究。",
-          "协助转录与量化分析，包括验证性因子分析（CFA）及结构方程模型（SEM）。"
-        ]
+          "开展文献综述，并协助项目数据收集。负责开展访谈、焦点小组讨论及录音资料转写。",
+          "协助开展数据分析，包括验证性因子分析和结构方程模型，并承担其他项目研究工作。"
+        ],
+        "supervisor": "祝新华教授"
       },
       {
         "dates": "2022年5月—2023年4月",
-        "title": "系史口述历史项目（1976—1984）",
+        "title": "中文系口述历史项目（1976—1984年）",
         "institution": "新加坡国立大学",
-        "role": "兼职研究助理",
+        "role": "研究助理",
         "details": [
-          "设计口述历史访谈流程，独立访谈五名校友，了解新加坡华文教育。",
-          "转录、核验及整理访谈资料，并协调项目会议。"
-        ]
+          "依据口述历史研究方法设计访谈流程与访谈提纲。独立对五位中文系校友开展深度访谈，探讨新加坡华文教育及历史变迁。",
+          "转写、核验并整理访谈资料，协调每周项目会议并做好会议记录。"
+        ],
+        "supervisor": "王昌伟教授、赖素春博士"
       },
       {
-        "dates": "2022年4月至9月",
-        "title": "新加坡新冠疫情期间的社区关怀与宗教回应",
+        "dates": "2022年4月—9月",
+        "title": "新加坡华人庙宇、社团及其他亚洲宗教机构的凝聚力、社区关怀与信心：全球化的影响及宗教对新冠疫情的回应",
         "institution": "新加坡国立大学亚洲研究所",
-        "role": "兼职研究助理",
+        "role": "研究助理",
         "funding": "新加坡文化、社区及青年部",
         "details": [
-          "协助面向庙宇管理者及成员的问卷调查、访谈与田野观察。",
-          "为疫情期间庙宇社区回应的研究报告提供质性资料与分析。"
-        ]
+          "协助设计并向庙宇管理者和成员发放问卷。访谈庙宇管理者，实地观察宗教活动及线上社区参与情况，协助梳理疫情期间庙宇的运作流程。",
+          "基于人类学田野调查，通过参与式观察和深度访谈收集、分析质性资料，并参与研究报告撰写。"
+        ],
+        "supervisor": "Kenneth Dean 教授",
+        "supervisorLabel": "项目负责人："
       },
       {
         "dates": "2018年11月—2019年11月",
         "title": "魔幻现实主义与中国当代小说",
         "institution": "中国社会科学院大学",
-        "role": "研究团队负责人",
+        "role": "团队负责人",
         "details": [
-          "带领五人团队，独立研究中国寻根文学中的魔幻现实主义。",
-          "协调研究会议、综合研究发现并完成结项答辩。"
-        ]
+          "带领五人研究团队，考察魔幻现实主义在中国当代文学中的转化与重新阐释。",
+          "组织每周研究会议，分配任务、跟进项目进度并整合团队成果；完成研究项目，并在最终口头汇报中顺利通过答辩。"
+        ],
+        "supervisor": "陈众议教授（中国社会科学院）"
       }
     ],
     "academicVisits": [
       {
-        "dates": "2026年9月至12月",
+        "dates": "2026年9月—12月",
         "title": "国际访问研究生",
-        "institution": "不列颠哥伦比亚大学",
-        "detail": "语言与读写教育系 · Prof. Guofang Li · 香港理工大学资助"
+        "institution": "英属哥伦比亚大学",
+        "detail": "语言与读写教育系 · 导师：李国芳教授 · 香港理工大学资助"
       },
       {
-        "dates": "2021年8月至10月",
-        "title": "暑期导师制课程",
+        "dates": "2021年8月—10月",
+        "title": "暑期导师课程",
         "institution": "牛津大学",
-        "detail": "导师：Dr. Miriam Driessen"
+        "detail": "导师：Miriam Driessen 博士"
       },
       {
         "dates": "2021年7月",
@@ -163,90 +171,98 @@
         "detail": "中国社会科学院大学资助"
       },
       {
-        "dates": "2019年7月至8月",
-        "title": "哲学学院暑期学校",
-        "institution": "雅典国立卡波迪斯特里安大学",
+        "dates": "2019年7月—8月",
+        "title": "暑期学校，哲学院",
+        "institution": "雅典大学",
         "detail": "中国社会科学院大学资助"
       }
     ],
     "conferences": [
       {
-        "title": "双文化认同整合与理想二语自我：对多语香港汉语二语学习的影响",
+        "title": "双文化认同整合与理想二语自我：对香港多语环境下中文二语学习的影响",
         "event": "美国教育研究协会年会",
         "location": "美国洛杉矶",
         "dates": "2026年4月8日至12日",
-        "format": "圆桌报告"
+        "format": "圆桌报告",
+        "authors": "庞琬茹，朱思宇，祝新华，张紫淇"
       },
       {
-        "title": "社会支持如何影响香港少数族裔学生的汉语二语学习动机",
+        "title": "社会支持如何影响香港少数族裔学生的中文二语学习动机",
         "event": "美国教育研究协会年会",
         "location": "美国洛杉矶",
         "dates": "2026年4月8日至12日",
-        "format": "圆桌报告"
+        "format": "圆桌报告",
+        "authors": "张紫淇，祝新华，谢正立，庞琬茹",
+        "originalTitle": "How social support influences L2 Chinese learning motivation among Hong Kong ethnic minority students"
       },
       {
-        "title": "探究成长型思维与双文化认同对学生汉语二语学习投入的影响",
-        "event": "欧洲学习与教学研究协会会议",
+        "title": "探究成长型思维与双文化认同对学生中文二语学习投入的影响",
+        "event": "欧洲学习与教学研究协会（EARLI）大会",
         "location": "奥地利格拉茨",
         "dates": "2025年8月25日至29日",
-        "format": "论文报告"
+        "format": "论文报告",
+        "authors": "庞琬茹，姚远，祝新华，朱思宇"
       },
       {
-        "title": "家长态度对一年级汉语二语学习者自我信念与阅读表现的影响",
+        "title": "家长态度对中文作为二语的一年级学生自我信念与阅读表现的影响",
         "event": "美国教育研究协会年会",
-        "location": "美国丹佛",
+        "location": "美国科罗拉多州丹佛",
         "dates": "2025年4月23日至27日",
-        "format": "海报展示"
+        "format": "海报报告",
+        "authors": "庞琬茹，朱思宇，姚远"
       },
       {
-        "title": "借助人工智能提升硕士生的写作反馈能力：一项干预研究",
+        "title": "借助人工智能提升硕士研究生的写作反馈能力：一项干预研究",
         "event": "美国教育研究协会年会",
-        "location": "美国丹佛",
+        "location": "美国科罗拉多州丹佛",
         "dates": "2025年4月23日至27日",
-        "format": "圆桌报告"
+        "format": "圆桌报告",
+        "authors": "李嘉琳，朱思宇，祝新华，庞琬茹"
       },
       {
-        "title": "青少年学习者的理想二语自我、投入维度与汉语水平：性别调节路径",
+        "title": "低龄学习者的理想二语自我、学习投入维度与中文水平：性别的调节路径",
         "event": "美国教育研究协会年会",
-        "location": "加拿大多伦多",
+        "location": "加拿大安大略省多伦多",
         "dates": "2027年4月14日至18日",
-        "format": "海报投稿"
+        "format": "海报报告",
+        "authors": "董怡雯，孙伊雯，祝新华，姚远，张紫淇，庞琬茹",
+        "status": "Accepted"
       }
     ],
     "teaching": [
       {
         "dates": "2024年秋季与2026年春季",
-        "title": "汉语语言测试导论",
-        "role": "助教",
+        "title": "中文测试导论",
+        "role": "教学助理",
         "institution": "香港理工大学",
-        "detail": "负责课程协调、作业评分与学生支持。课程教师：Prof. Tse Shek Kam 与 Prof. Xinhua Zhu。"
+        "detail": "协助课程设计与协调、批改作业并解答学生疑问。授课教师：谢锡金教授、祝新华教授。"
       },
       {
         "dates": "2017年9月—2019年1月",
         "title": "中小学生科学教育项目",
         "role": "教师",
         "institution": "北京",
-        "detail": "每周开展科学实践课程与实验，并提供个别反馈。"
+        "detail": "每周为北京小学生及初中生讲授动手实践型科学课程，指导学生开展科学实验和互动学习任务。"
       }
     ],
     "leadership": [
       {
         "dates": "2022年10月至今",
-        "title": "研究项目与资助申请支持",
+        "title": "项目与资助申请支持",
         "institution": "香港理工大学",
-        "detail": "协助二十余项研究资助、教学发展与学术奖项申请，包括三项优配研究金（GRF）申请；参与研究设计、文献综述、方法与预算规划。"
+        "detail": "协调并支持超过20项科研资助、教学发展及学术奖项申请，其中包括三项香港优配研究金项目（GRF）；参与研究设计、文献综述、研究方法及预算规划。"
       },
       {
         "dates": "2022年10月至今",
-        "title": "招聘与研究团队协调",
+        "title": "课题组管理",
         "institution": "香港理工大学",
-        "detail": "在多个研究项目中招募、培训并协调二十余名研究助理及学生助手。"
+        "detail": "负责多个研究项目中累计超过25名研究助理及学生助理的招聘、入职和协调工作。"
       },
       {
-        "dates": "2021年1月至6月",
+        "dates": "2021年1月—6月",
         "title": "编辑实习生",
         "institution": "社会科学文献出版社（北京）",
-        "detail": "参与甲骨文世界史系列的编辑与宣传工作，并协助年度译者论坛。"
+        "detail": "协助甲骨文世界历史书系的编辑与推广工作，并协助组织年度译者论坛。"
       },
       {
         "dates": "2019年4月—2020年9月",
@@ -257,8 +273,8 @@
       {
         "dates": "2018年9月—2020年9月",
         "title": "学生辅导员",
-        "institution": "中国社会科学院大学历史学系",
-        "detail": "提供学业与生活支持，参与学生事务及发展活动。"
+        "institution": "中国社会科学院大学历史系",
+        "detail": "为历史系本科生提供学业与成长支持，协调学生事务及师生沟通，并组织学生发展活动。"
       },
       {
         "dates": "2020年9月—2021年6月",
@@ -278,113 +294,219 @@
     ],
     "awards": [
       {
-        "title": "研究生学术访问计划资助",
+        "title": "研究生外访计划资助",
         "institution": "香港理工大学"
       },
       {
-        "title": "研究生奖学金",
-        "institution": "香港理工大学"
+        "title": "博士研究生全额奖学金",
+        "institution": "香港理工大学",
+        "year": "2023年—2027年"
       },
       {
-        "title": "中国文化与语言硕士课程优秀奖（2021/2022学年）",
+        "title": "中国文化与语言硕士优秀奖（5%）",
         "institution": "新加坡国立大学"
       },
       {
-        "title": "北京市优秀毕业论文",
+        "title": "北京市优秀毕业论文（1‰）",
         "institution": "北京"
       },
       {
-        "title": "校级优秀毕业论文",
+        "title": "优秀毕业论文（10%）",
         "institution": "中国社会科学院大学"
       },
       {
-        "title": "优秀学生干部",
-        "institution": "中国社会科学院大学"
-      },
-      {
-        "year": "2018年、2019年",
-        "title": "三等奖学金",
+        "title": "优秀学生干部（1%）",
         "institution": "中国社会科学院大学"
       },
       {
         "year": "2018年、2019年",
-        "title": "共青团优秀个人",
+        "title": "奖学金（10%）",
+        "institution": "中国社会科学院大学"
+      },
+      {
+        "year": "2018年、2019年",
+        "title": "共青团先进个人（1%）",
         "institution": "中国社会科学院大学"
       }
     ],
     "methods": [
       {
         "title": "质性与混合研究方法",
-        "detail": "Q方法、半结构式访谈、主题分析、话语分析；NVivo、MAXQDA、KADE、EQ Web Sort。"
+        "detail": "Q 方法、半结构式访谈、主题分析、话语分析；工具：NVivo、MAXQDA、KADE、EQ Web Sort等。"
       },
       {
         "title": "量化研究方法",
-        "detail": "结构方程模型（SEM）、验证性因子分析（CFA）、相关与回归分析；SPSS 与 R。"
+        "detail": "结构方程模型（SEM）、验证性因子分析（CFA）、相关与回归分析；工具：SPSS、R。"
       },
       {
-        "title": "语言能力",
-        "detail": "普通话（母语）、英语（雅思7.5）、粤语（基础）。"
+        "title": "语言",
+        "detail": "普通话（母语）、英语（雅思7.5分）、粤语（基础）。"
       },
       {
         "title": "其他技能",
-        "detail": "三维设计与打印、Photoshop、微信公众号运营。"
+        "detail": "3D 设计与打印、Photoshop、微信公众号运营。"
+      }
+    ],
+    "phdSupervisor": "祝新华教授",
+    "peopleLinks": [
+      {
+        "name": "祝新华教授"
+      },
+      {
+        "name": "李国芳教授"
+      },
+      {
+        "name": "Miriam Driessen 博士"
+      },
+      {
+        "name": "王昌伟教授"
+      },
+      {
+        "name": "赖素春博士"
+      },
+      {
+        "name": "Kenneth Dean 教授"
+      },
+      {
+        "name": "陈众议教授"
+      },
+      {
+        "name": "谢锡金教授"
       }
     ]
   },
   "papers": {
     "pang2026reading": {
-      "title": "家长阅读态度、一年级学生阅读自我信念与汉语二语阅读表现之间的相互关系",
-      "summary": "家庭阅读态度与儿童自我信念如何关联汉语二语阅读。"
+      "title": "家长阅读态度、一年级学生的阅读自我信念与中文二语阅读表现之间的相互关系",
+      "summary": "家长阅读态度、一年级学生的阅读自我信念与中文二语阅读表现之间的关系。",
+      "authors": [
+        "庞琬茹",
+        "朱思宇",
+        "姚远",
+        "陈瑞端",
+        "祝新华"
+      ]
     },
     "zhang2026linguistic": {
-      "title": "语言特征对不同第一语言背景学生汉语二语写作质量的影响",
-      "summary": "不同第一语言背景下汉语写作的词汇与句法特征。"
+      "title": "语言特征对不同母语背景学习者的中文二语写作质量的影响",
+      "summary": "不同母语背景下，语言特征对中文二语写作质量的影响。",
+      "authors": [
+        "张欣叶",
+        "朱思宇",
+        "姚远",
+        "于书林",
+        "庞琬茹",
+        "祝新华"
+      ]
     },
     "zhu2026selfesteem": {
-      "title": "自尊在香港汉语二语学习者二语自我与写作表现关系中的中介作用",
-      "summary": "二语自我、自尊与汉语写作表现之间的关系。"
+      "title": "自尊在香港中文二语学习者的二语自我与写作表现关系中的中介作用",
+      "summary": "二语自我、自尊与中文二语写作表现之间的关系。",
+      "authors": [
+        "祝新华",
+        "姚远",
+        "庞琬茹",
+        "朱思宇",
+        "李清扬"
+      ]
     },
     "yao2025emotions": {
-      "title": "探究中国大学英语写作教师在提供学生写作反馈时的情绪",
-      "summary": "教师写作反馈中的情绪维度。"
+      "title": "探究中国高校英语写作教师在提供学生写作反馈时的情绪",
+      "summary": "中国高校英语写作教师提供写作反馈时的情绪。",
+      "authors": [
+        "姚远",
+        "于书林",
+        "祝新华",
+        "朱思宇",
+        "庞琬茹"
+      ]
     },
     "zhu2025review": {
-      "title": "二十年来汉语综合写作评估研究的整合性综述",
-      "summary": "汉语综合写作评估研究的整合性回顾。"
+      "title": "二十年来中文综合写作评估研究的整合性综述",
+      "summary": "中文综合写作评估研究的整合性综述。",
+      "authors": [
+        "祝新华",
+        "李嘉琳",
+        "姚远",
+        "许皖栋",
+        "朱思宇",
+        "庞琬茹",
+        "孙伊雯"
+      ]
     },
     "cheong2025discussion": {
-      "title": "大学生综合小组讨论的构念：小组讨论表现能在多大程度上反映综合小组讨论任务表现？",
-      "summary": "理解基于材料的小组讨论评估构念。"
+      "title": "大学生综合小组讨论的构念：小组讨论表现能够在多大程度上反映综合小组讨论任务表现？",
+      "summary": "大学生综合小组讨论的构念与任务表现。",
+      "authors": [
+        "钟竹梅",
+        "许皖栋",
+        "庞琬茹",
+        "朱思宇",
+        "廖先"
+      ]
     },
     "yao2024mindsets": {
-      "title": "探究中国大学英语写作教师对学生写作能力的思维观及其反馈实践",
-      "summary": "教师思维观及其写作反馈方式。"
+      "title": "考察中国高校英语写作教师对学生写作能力的思维观及其反馈实践",
+      "summary": "教师对学生写作能力的思维观及其写作反馈实践。",
+      "authors": [
+        "姚远",
+        "于书林",
+        "祝新华",
+        "朱思宇",
+        "庞琬茹"
+      ]
     },
     "xu2023selfefficacy": {
-      "title": "自我效能对综合写作表现的影响：跨语言视角",
-      "summary": "中英文写作自我效能与综合写作表现。"
+      "title": "自我效能感对综合写作表现的影响：跨语言视角",
+      "summary": "跨语言视角下，自我效能感对综合写作表现的影响。",
+      "authors": [
+        "许皖栋",
+        "赵鹏飞",
+        "姚远",
+        "庞琬茹",
+        "祝新华"
+      ]
     },
     "zhu2023competence": {
-      "title": "探究语言能力、理想自我、学习投入与综合写作表现的关系：结构方程模型分析",
-      "summary": "综合写作中的语言能力、学习动机与学习投入。"
+      "title": "以结构方程模型探究语言能力、理想自我、学习投入与综合写作表现之间的关系",
+      "summary": "中文综合写作中的语言能力、理想自我与学习投入。",
+      "authors": [
+        "祝新华",
+        "姚远",
+        "庞琬茹",
+        "朱思宇"
+      ]
     },
     "pang-longitudinal": {
-      "title": "汉语二语写作发展中的语言知识与语言特征：香港纵向研究"
+      "title": "中文二语写作发展中的语言知识与语言特征：一项在香港开展的纵向研究",
+      "authors": [
+        "庞琬茹",
+        "朱思宇",
+        "姚远",
+        "祝新华"
+      ]
     },
     "zhu-bicultural": {
-      "title": "双文化认同整合在成长型思维与汉语二语学习投入关系中的中介作用"
+      "title": "双文化认同整合在中文二语学习者的成长型思维与学习投入关系之间发挥的中介作用",
+      "authors": [
+        "祝新华",
+        "姚远",
+        "朱思宇",
+        "田汶鑫",
+        "庞琬茹"
+      ]
     }
   },
   "ui": {
-    "Publications": "研究发表",
+    "Publications": "学术论文",
     "Academic experience": "学术经历",
     "Teaching & social service": "教学与社会服务",
-    "Awards & honours": "奖励与荣誉",
+    "Awards & honours": "奖项与荣誉",
     "Full CV": "完整简历",
     "Education": "教育背景",
     "Research interests": "研究兴趣",
-    "Selected publications": "精选发表",
-    "Full publications": "全部研究发表",
+    "Selected publications": "精选论文",
+    "Full publications": "全部学术论文",
     "View all experience": "全部学术经历",
     "Conference presentations": "会议报告",
     "All presentations": "全部会议报告",
@@ -418,29 +540,30 @@
     "Experience sections": "学术经历目录",
     "Teaching, academic service, and contributions to research and university life.": "教学、学术服务以及研究与大学事务中的工作。",
     "Teaching & academic service": "教学与学术服务",
-    "Invited journal peer review · 2023–present": "受邀期刊审稿 · 2023年至今",
-    "Professional experience & leadership": "专业经历与领导力",
+    "Invited journal peer review · 2023–present": "国际期刊同行评审 · 2023年至今",
+    "Professional experience & leadership": "专业经历与领导工作",
     "Scholarships, research support, and academic recognition.": "奖学金、研究资助与学术荣誉。",
-    "Awards": "奖励与荣誉",
+    "Awards": "奖项与荣誉",
     "Curriculum vitae": "完整学术简历",
     "CV sections": "简历目录",
     "Teaching & service": "教学与服务",
     "Methods": "研究方法",
-    "Methods & languages": "研究方法与语言能力",
+    "Methods & languages": "语言与学术能力",
     "Doctoral dissertation": "博士论文",
     "Updated": "更新于",
     "November 2026": "2026年11月",
     "Wanru Pang | Applied Linguistics": "庞琬茹 | 应用语言学",
-    "Publications | Wanru Pang": "研究发表 | 庞琬茹",
+    "Publications | Wanru Pang": "学术论文 | 庞琬茹",
     "Academic experience | Wanru Pang": "学术经历 | 庞琬茹",
     "Teaching & social service | Wanru Pang": "教学与社会服务 | 庞琬茹",
-    "Awards & honours | Wanru Pang": "奖励与荣誉 | 庞琬茹",
+    "Awards & honours | Wanru Pang": "奖项与荣誉 | 庞琬茹",
     "Curriculum vitae | Wanru Pang": "完整学术简历 | 庞琬茹",
     "Wanru Pang (庞琬茹), PhD candidate at The Hong Kong Polytechnic University. Research on identity, motivation and multilingual literacy development.": "庞琬茹，香港理工大学应用语言学博士候选人，研究身份认同、学习动机与多语读写能力发展。",
     "Wanru Pang’s research projects, academic visits, exchange programmes, and conference presentations.": "庞琬茹的研究项目、学术访问、交流项目与会议报告。",
-    "Teaching, journal peer review, professional experience, and leadership by Wanru Pang.": "庞琬茹的教学、期刊审稿、专业经历与领导力。",
+    "Teaching, journal peer review, professional experience, and leadership by Wanru Pang.": "庞琬茹的教学、期刊同行评审、专业经历与领导工作。",
     "Scholarships, research support, and academic awards received by Wanru Pang.": "庞琬茹获得的奖学金、研究资助与学术奖励。",
     "Academic curriculum vitae of Wanru Pang: education, research, publications, conferences, teaching, service, and honours.": "庞琬茹的学术简历，包括教育、研究、发表、会议、教学、服务与荣誉。",
-    "Journal publications and manuscripts under review by Wanru Pang, with DOI links and citation information.": "庞琬茹的期刊论文与审稿中论文，附 DOI 链接及引用信息。"
+    "Journal publications and manuscripts under review by Wanru Pang, with DOI links and citation information.": "庞琬茹的期刊论文与审稿中论文，附 DOI 链接及引用信息。",
+    "Conference presentation · Accepted": "会议报告 · 已接收"
   }
 }

@@ -64,10 +64,11 @@ for(const paper of papers){
 }
 const chineseExperience=await read('dist/zh/experience.html');
 for(const [i,conference] of profile.conferences.entries()){
-  assert(chineseExperience.includes(escape(conference.title)),'Original conference titles must be preserved');
+  assert(chineseExperience.includes(escape(chinese.profile.conferences[i].originalTitle || conference.title)),'Original conference titles must be preserved');
   assert(chineseExperience.includes('（'+escape(chinese.profile.conferences[i].title)+'）'),'Conference translations must be present');
 }
-assert(chineseExperience.includes('会议投稿 · 审核中（Under review）'),'Conference submission is not an accepted presentation');
+assert(chineseExperience.includes('会议报告 · 已接收'),'The Chinese CV confirms the 2027 presentation is accepted');
+assert(!chineseExperience.includes('会议投稿 · 审核中'),'Do not retain the superseded review status in Chinese');
 for(const prefix of ['', 'zh/']){
   const html=await read('dist/'+prefix+'index.html');
   assert(!html.includes('I study how identity, motivation, and language interact')&&!html.includes('我关注身份认同、学习动机与语言如何共同影响'),'Requested opening sentence must be removed in both languages');
@@ -93,7 +94,8 @@ for(const prefix of ['', 'zh/']){
   const publicationPage=await read('dist/'+prefix+'publications.html');
   assert(publicationPage.includes('class="publication-metrics"'),'Publication totals need their heading-side position');
   const cv=await read('dist/'+prefix+'cv.html');
-  for(const person of profile.peopleLinks){
+  for(const [personIndex, sourcePerson] of profile.peopleLinks.entries()){
+    const person={...sourcePerson,name:prefix ? chinese.profile.peopleLinks[personIndex].name : sourcePerson.name};
     assert(cv.includes(`class="person-link" href="${escape(person.url)}"`),`Official profile must be linked in CV: ${person.name}`);
     // Every visible mention, including combined supervisor labels, gets its own link.
     const visible=cv.split('<main')[1].split('</main>')[0];
