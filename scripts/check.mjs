@@ -78,7 +78,7 @@ for(const prefix of ['', 'zh/']){
   const stats=html.match(/<section class="research-output"[\s\S]*?<\/section>/)?.[0]||'';
   assert(stats.includes('<strong>9</strong>')&&stats.includes('<strong>5</strong>')&&stats.includes('<strong>102</strong>'),'Output counts are 9 published papers, 5 presented conference items, 102 verified citations');
   assert.equal(profile.researchMetrics.citationsChecked,'2026-11-08','Keep the citation verification date in source data');
-  const biography=html.match(/<div class="biography">[\s\S]*?<aside/)?.[0]||'';
+  const biography=html.match(/<div class="biography">[\s\S]*?<\/section><\/div>/)?.[0]||'';
   const sidebar=html.match(/<aside class="contact-aside">[\s\S]*?<\/aside>/)?.[0]||'';
   assert(!biography.includes('class="brand-icon '),'Profile logos must move out of the biography');
   assert.equal((sidebar.match(/class="brand-icon /g)||[]).length,3,'All three platform links belong below Contact');
