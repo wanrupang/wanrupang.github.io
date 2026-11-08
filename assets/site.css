@@ -79,7 +79,7 @@ html[lang="zh-Hans"] .research-output h2{font-family:Arial,"Microsoft YaHei",san
 .email-icon{width:21px;height:21px;flex:none;color:var(--accent)}
 .email span{min-width:0}
 .contact-links{display:grid;grid-template-columns:max-content max-content;gap:11px 24px;margin-top:16px;font-size:15px;align-items:center;justify-content:start}
-.contact-links a:first-child{grid-column:1/-1}
+.contact-links a:last-child{grid-column:1/-1}
 .biography .research-output{width:100%;max-width:570px;margin-top:30px;padding-top:21px}
 .biography .research-output h2{font-size:16px;margin-bottom:17px}
 .biography .output-stats{display:grid;grid-template-columns:.9fr 1.15fr 1.15fr}
