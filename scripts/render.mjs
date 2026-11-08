@@ -1,9 +1,11 @@
 import { readFile, writeFile, mkdir, copyFile, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = name => readFile(path.join(root, name), 'utf8');
+const cssVersion = createHash('sha256').update(await read('assets/site.css')).digest('hex').slice(0, 12);
 const source = JSON.parse(await read('content/profile.json'));
 const papers = JSON.parse(await read('content/publications.json'));
 const chinese = JSON.parse(await read('content/zh.json'));
@@ -75,7 +77,7 @@ for (const locale of ['en', 'zh']) {
 <title>${u(title)}</title><meta name="description" content="${u(description)}"><meta name="theme-color" content="#ffffff">
 <meta name="robots" content="${siteBase?'index,follow':'noindex,nofollow'}"><meta property="og:title" content="${u(title)}"><meta property="og:description" content="${u(description)}"><meta property="og:type" content="profile"><meta property="og:site_name" content="${esc(zh ? profile.nameChinese : profile.name)}"><meta property="og:locale" content="${zh ? 'zh_CN' : 'en_US'}">
 ${siteBase?`<link rel="canonical" href="${esc(publicUrl(filename, locale))}"><link rel="alternate" hreflang="en" href="${esc(publicUrl(filename))}"><link rel="alternate" hreflang="zh-Hans" href="${esc(publicUrl(filename,'zh'))}"><link rel="alternate" hreflang="x-default" href="${esc(publicUrl(filename))}"><meta property="og:url" content="${esc(publicUrl(filename, locale))}"><meta property="og:image" content="${esc(new URL(profile.portrait.src,siteBase).href)}">`:''}
-<link rel="icon" href="${asset('assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="${asset('assets/site.css')}"><script src="${asset('assets/site.js')}" defer></script>
+<link rel="icon" href="${asset('assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="${asset('assets/site.css')}?v=${cssVersion}"><script src="${asset('assets/site.js')}" defer></script>
 <script type="application/ld+json">${jsonData({'@context':'https://schema.org','@type':'Person',name:zh ? profile.nameChinese : profile.name,alternateName:zh ? profile.name : profile.nameChinese,jobTitle:profile.title,affiliation:{'@type':'CollegeOrUniversity',name:profile.institution},alumniOf:profile.education.filter(e=>!e.expected).map(e=>({'@type':'CollegeOrUniversity',name:e.institution})),sameAs:profile.links.map(l=>l.url),...(siteBase?{url:publicUrl('index.html',locale),image:new URL(profile.portrait.src,siteBase).href}:{})})}</script></head><body><a class="skip-link" href="#main">${u('Skip to content')}</a>${header(filename)}`;
   const footer = () => `<footer class="site-footer wrap"><span>© ${profile.updated.slice(0,4)} ${esc(zh ? profile.nameChinese : profile.name)}</span><span>${u('Updated')} <time datetime="${profile.updated}">${dateLabel}</time></span></footer></body></html>`;
   const pageTitle = (title, description, action='') => `<div class="page-heading"><div><h1>${u(title)}</h1>${description?`<p>${u(description)}</p>`:''}</div>${action}</div>`;
