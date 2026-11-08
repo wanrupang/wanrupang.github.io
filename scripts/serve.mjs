@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const base = fileURLToPath(new URL('../dist/', import.meta.url));
-const allowed = new Set(['index.html','publications.html','experience.html','teaching.html','awards.html','cv.html','assets/site.css','assets/site.js','assets/favicon.svg','assets/wanru-pang.jpg','assets/googlescholar.svg','assets/orcid.svg','assets/researchgate.svg','assets/Wanru-Pang-CV.pdf','publications.bib','robots.txt','sitemap.xml']);
+const allowed = new Set(['index.html','publications.html','experience.html','teaching.html','awards.html','cv.html','assets/site.css','assets/site.js','assets/favicon.svg','assets/wanru-pang-aera.jpg','assets/googlescholar.svg','assets/orcid.svg','assets/researchgate.svg','publications.bib','robots.txt','sitemap.xml']);
 const types = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.pdf':'application/pdf','.bib':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8','.xml':'application/xml; charset=utf-8'};
 for (const file of [...allowed].filter(file => file.endsWith('.html'))) allowed.add('zh/' + file);
 const port = Number(process.env.PORT || 4173);

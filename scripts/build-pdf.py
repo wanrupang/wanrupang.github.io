@@ -1,7 +1,6 @@
 """Generate the downloadable public CV from the same content as the website."""
 import hashlib
 import json
-import shutil
 from datetime import date
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -129,6 +128,4 @@ def footer(canvas,doc):
     canvas.restoreState()
 doc=SimpleDocTemplate(str(output),pagesize=A4,rightMargin=18*mm,leftMargin=18*mm,topMargin=17*mm,bottomMargin=22*mm,title='Wanru Pang - Curriculum vitae',author='Wanru Pang',subject='Academic curriculum vitae',keywords='content-sha256:'+fingerprint)
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
-for target in [ROOT/'assets/Wanru-Pang-CV.pdf',ROOT/'dist/assets/Wanru-Pang-CV.pdf']:
-    target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(output,target)
-print('Generated complete CV PDF: '+str(output))
+print('Generated private local CV PDF only: '+str(output))

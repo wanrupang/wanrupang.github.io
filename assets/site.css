@@ -25,3 +25,24 @@ html[lang="zh-Hans"] .contact-aside p{line-height:1.8}
 html[lang="zh-Hans"] .conference-title{line-height:1.65}
 @media(min-width:1181px){.site-header nav{gap:20px}.site-header nav a{font-size:15px}}
 @media(max-width:760px){html[lang="zh-Hans"] .biography>p:not(.position):not(.supervisor){line-height:1.9}.translated-title{font-size:.82em}.site-header nav .language-switch{padding:3px 9px}.cv-name{font-size:20px}}
+
+/* November 2026 revision: conference portrait and compact research totals. */
+.portrait{width:100%;max-width:340px;height:auto;aspect-ratio:1.05;object-fit:cover;object-position:56% 50%}
+.institution-name{font-weight:650}
+.qs-rank{font-family:var(--sans);font-size:.77em;font-weight:400;color:var(--muted);white-space:nowrap}
+.rank-note{font:12px/1.6 var(--sans);color:var(--muted);margin-top:13px}
+.supervisor a{color:inherit;text-decoration-color:#a8b9af}
+.biography .research-bio{margin-top:20px}
+.research-output{width:fit-content;max-width:100%;border-top:1px solid var(--line);padding-top:16px;margin-top:24px}
+.research-output h2{font:600 14px/1.4 var(--sans);letter-spacing:0;margin-bottom:11px}
+.output-stats{display:flex;align-items:stretch;gap:0}
+.output-stat{display:flex;flex-direction:column;justify-content:flex-start;color:var(--ink);text-decoration:none;padding:0 20px;min-width:0}
+.output-stat:first-child{padding-left:0}
+.output-stat:last-child{padding-right:0}
+.output-stat+.output-stat{border-left:1px solid var(--line)}
+.output-stat>strong{font:400 29px/1.15 var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.output-stat>span:not(.sr-only){font-size:12px;line-height:1.45;margin-top:5px;max-width:158px}
+.output-stat:hover>strong{text-decoration:underline;text-underline-offset:4px}
+.output-note{font:11px/1.5 var(--sans);color:var(--muted);margin-top:9px}
+html[lang="zh-Hans"] .research-output h2{font-family:Arial,"Microsoft YaHei",sans-serif}
+@media(max-width:760px){.contact-aside{display:flex;flex-direction:column;gap:22px}.portrait{width:100%;max-width:340px}.output-stat{padding-inline:12px}.output-stat>strong{font-size:27px}.output-stat>span:not(.sr-only){font-size:11px;max-width:104px}.research-output{margin-top:23px}.qs-rank{font-size:.76em}.rank-note{font-size:11px}}

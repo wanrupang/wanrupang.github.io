@@ -2,7 +2,6 @@ import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { createHash } from 'node:crypto';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=async p=>readFile(path.join(root,p),'utf8');
 const papers=JSON.parse(await read('content/publications.json'));
@@ -22,6 +21,7 @@ for(const filename of [...pageNames,...pageNames.map(name=>'zh/'+name)]) {
   assert(html.includes(`lang="${chinesePage?'zh-Hans':'en'}"`),'Correct page language');
   assert(html.includes(`class="language-switch" href="${counterpart}"`),'Language switch must reach the same page');
   assert(!html.includes('undefined'),'No missing translation values');
+  assert(!/Wanru-Pang-CV\.pdf|Download CV \(PDF\)|下载完整简历（英文 PDF）/.test(html),'No public CV download links or descriptions');
   assert(html.includes('hreflang="en"')&&html.includes('hreflang="zh-Hans"'),'Search engines need both locale alternatives');
   assert(!/github/i.test(html.split('</head>')[1]),'Visible pages must not contain GitHub branding or repository links');
   assert(!/<a\b[^>]*href=["']https?:\/\/(?:www\.)?github\.com(?:\/|["'])/i.test(html),'Public website must not link to the source repository');
@@ -46,11 +46,7 @@ assert.equal((home.match(/class="publication"/g)||[]).length,4,'Home features fo
 assert.equal(((await read('dist/publications.html')).match(/class="publication"/g)||[]).length,9,'Full publication page includes all published works');
 assert(home.includes('class="education-research section"')&&home.includes('class="portrait"'),'Home needs the requested two-column section and portrait');
 assert.equal((home.match(/class="brand-icon /g)||[]).length,3,'All scholarly profile links need their platform mark');
-const pdf=await readFile(path.join(root,'dist/assets/Wanru-Pang-CV.pdf'));
-assert(pdf.subarray(0,5).equals(Buffer.from('%PDF-')),'Download must be a real PDF');
-const normalized=async filename=>(await read(filename)).replace(/\r\n/g,'\n').trim();
-const sourceHash=createHash('sha256').update((await normalized('content/profile.json'))+'\n'+(await normalized('content/publications.json'))).digest('hex');
-assert(pdf.includes(Buffer.from('content-sha256:'+sourceHash)),'CV PDF is stale: regenerate scripts/build-pdf.py');
+for(const folder of ['assets','dist/assets']) assert(!(await readdir(path.join(root,folder))).some(file=>/\.pdf$/i.test(file)),'CV PDF must be absent from both public asset folders');
 const profile=JSON.parse(await read('content/profile.json'));
 if(profile.siteUrl){
   assert((await read('dist/robots.txt')).includes('Allow: /'),'Live website must allow crawling');
@@ -72,5 +68,17 @@ for(const [i,conference] of profile.conferences.entries()){
   assert(chineseExperience.includes('（'+escape(chinese.profile.conferences[i].title)+'）'),'Conference translations must be present');
 }
 assert(chineseExperience.includes('会议投稿 · 审核中（Under review）'),'Conference submission is not an accepted presentation');
-assert((await read('dist/zh/cv.html')).includes('下载完整简历（英文 PDF）'),'PDF language must be clear');
-console.log('PASS: 12 bilingual pages, language switches, links and anchors, original paper/conference titles, selected/full publications, portrait and platform marks, under-review status, public output, and current PDF.');
+for(const prefix of ['', 'zh/']){
+  const html=await read('dist/'+prefix+'index.html');
+  assert(!html.includes('I study how identity, motivation, and language interact')&&!html.includes('我关注身份认同、学习动机与语言如何共同影响'),'Requested opening sentence must be removed in both languages');
+  assert(html.includes('assets/wanru-pang-aera.jpg'),'New conference portrait must be used');
+  assert(html.includes('https://www.polyu.edu.hk/lst/people/academic-staff/zhu-xinhua/'),'Supervisor must link to the supplied faculty page');
+  assert(html.includes('class="institution-name"'),'University names must be bold');
+  assert(html.includes('(QS #50)')&&html.includes('(QS #10)')&&html.includes('(QS #45)'),'Education and academic experience must show CV-provided QS ranks');
+  const stats=html.match(/<section class="research-output"[\s\S]*?<\/section>/)?.[0]||'';
+  assert(stats.includes('<strong>9</strong>')&&stats.includes('<strong>5</strong>')&&stats.includes('<strong>102</strong>'),'Output counts are 9 published papers, 5 presented conference items, 102 verified citations');
+  assert(stats.includes('datetime="2026-11-08"'),'Citation snapshot needs its verification date');
+  const experience=await read('dist/'+prefix+'experience.html');
+  for(const rank of [45,4,13,47,119]) assert(experience.includes(`(QS #${rank})`),'Academic visit ranks must match the source CV');
+}
+console.log('PASS: 12 bilingual pages, navigation, original titles, cropped-photo asset, supervisor link, CV-sourced QS ranks, verified research counts, under-review exclusions, and no public CV PDF.');

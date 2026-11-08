@@ -1,6 +1,6 @@
-Portrait: Wanru Pang's Google Scholar profile, retrieved 2026-11-07 at the owner's request.
-https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=dtlnp1MAAAAJ&citpid=7
-Original 242 x 256 image; no retouching.
+Portrait: AERA conference photograph supplied by the owner on 2026-11-08.
+Original 1932 x 1280 JPEG; no retouching or AI regeneration. CSS object-fit and
+object-position crop the excess blue margins in the displayed portrait frame.
 
 Platform marks: Simple Icons v16, SVG paths, CC0 distribution; each mark remains the trademark of its respective owner. Used to identify links to the owner's profiles.
 https://cdn.jsdelivr.net/npm/simple-icons@16/icons/googlescholar.svg

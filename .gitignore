@@ -9,3 +9,6 @@ tmp/
 .DS_Store
 .openai/*
 !.openai/hosting.json
+
+# CV downloads are private; do not publish PDF assets.
+*.pdf
