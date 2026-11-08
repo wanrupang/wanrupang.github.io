@@ -64,11 +64,29 @@ for(const paper of papers){
 }
 const chineseExperience=await read('dist/zh/experience.html');
 for(const [i,conference] of profile.conferences.entries()){
-  assert(chineseExperience.includes(escape(chinese.profile.conferences[i].originalTitle || conference.title)),'Original conference titles must be preserved');
+  assert(!Object.hasOwn(chinese.profile.conferences[i],'status'),'Conference status must be shared by both languages');
+  assert(!Object.hasOwn(chinese.profile.conferences[i],'originalTitle'),'Original conference titles must come from the shared source');
+  assert(chineseExperience.includes(escape(conference.title)),'Original conference titles must be preserved');
   assert(chineseExperience.includes('（'+escape(chinese.profile.conferences[i].title)+'）'),'Conference translations must be present');
 }
-assert(chineseExperience.includes('会议报告 · 已接收'),'The Chinese CV confirms the 2027 presentation is accepted');
-assert(!chineseExperience.includes('会议投稿 · 审核中'),'Do not retain the superseded review status in Chinese');
+// Dates and award qualifiers are facts, even when their surrounding text is translated.
+const months={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+for(const [i,education] of profile.education.entries()){
+  const en=education.detailDates.match(/^(\w+) (\d{4}) – (\w+) (\d{4})/);
+  const zh=chinese.profile.education[i].detailDates.match(/^(\d{4})年(\d+)月—(\d{4})年(\d+)月/);
+  assert(en&&zh,'Education dates must include start and end months');
+  assert.deepEqual([+en[2],months[en[1]],+en[4],months[en[3]]],zh.slice(1).map(Number),'Education dates must match across languages');
+}
+for(const [i,award] of profile.awards.entries()){
+  const zh=chinese.profile.awards[i];
+  assert.deepEqual(award.title.match(/\d+(?:%|‰)/g)||[],zh.title.match(/\d+(?:%|‰)/g)||[],'Award qualifiers must agree');
+  assert.deepEqual(award.year.match(/\d{4}/g),(zh.year||award.year).match(/\d{4}/g),'Award years and scholarship periods must agree');
+}
+assert.equal(papers.filter(p=>p.status==='Published').length,9);
+assert.equal(papers.filter(p=>p.status==='Under review').length,2);
+assert.equal(profile.conferences.filter(c=>c.status==='Presented').length,5);
+assert.equal(profile.conferences.filter(c=>c.status==='Accepted').length,1);
+assert.equal(profile.conferences.find(c=>c.year===2027)?.status,'Accepted','The owner-confirmed AERA 2027 status must be current');
 for(const prefix of ['', 'zh/']){
   const html=await read('dist/'+prefix+'index.html');
   assert(!html.includes('I study how identity, motivation, and language interact')&&!html.includes('我关注身份认同、学习动机与语言如何共同影响'),'Requested opening sentence must be removed in both languages');
@@ -105,5 +123,25 @@ for(const prefix of ['', 'zh/']){
   }
   const experience=await read('dist/'+prefix+'experience.html');
   for(const rank of [45,4,13,47,119]) assert(experience.includes(`(QS #${rank})`),'Academic visit ranks must match the source CV');
+  const acceptedHeading=prefix?'会议报告 · 已接收':'Conference presentation · Accepted';
+  const outdatedHeading=prefix?'会议投稿 · 审核中':'Conference submission · Under review';
+  for(const content of [experience,cv]){
+    assert(content.includes(acceptedHeading),'Accepted AERA 2027 poster must appear in experience and Full CV in both languages');
+    assert(!content.includes(outdatedHeading),'Remove the superseded conference review status');
+    const conferences=content.match(/<section id="conferences"[\s\S]*?<\/section>/)?.[0]||'';
+    assert.equal((conferences.split(acceptedHeading)[0].match(/class="conference-row"/g)||[]).length,5,'Keep five completed presentations separate from accepted work');
+    assert.equal((conferences.split(acceptedHeading)[1].match(/class="conference-row"/g)||[]).length,1,'Keep one accepted upcoming presentation');
+  }
+  const teaching=await read('dist/'+prefix+'teaching.html');
+  for(const content of [teaching,cv]){
+    assert(content.includes(prefix?'超过25名':'over 25 research assistants'),'Research team size must use the latest CV in both places');
+    assert(!content.includes('over 20 research assistants'),'Do not retain the old team size');
+  }
+  const awards=await read('dist/'+prefix+'awards.html');
+  for(const content of [awards,cv]){
+    assert(content.includes(prefix?'博士研究生全额奖学金':'Full PhD Scholarship'),'Full scholarship name must be current');
+    assert(content.includes(prefix?'2023年—2027年':'2023–2027'),'Full scholarship period must be current');
+    assert(!content.includes('Third-class Scholarship'),'Do not retain the superseded award class');
+  }
 }
-console.log('PASS: 12 bilingual pages, platform links under Contact, homepage/publication totals, removed footnotes and downloads, verified faculty links, original titles, QS labels, under-review exclusions, and no public CV PDF.');
+console.log('PASS: 12 bilingual pages; matched education dates, award periods/qualifiers, team size and accepted conference status; 9 published papers, 2 under-review manuscripts and 5 completed presentations; links, original titles, language switches, privacy and download exclusions.');

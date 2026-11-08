@@ -9,7 +9,7 @@
   "siteUrl": "https://wanrupang.github.io/",
   "prettyUrls": false,
   "phdSupervisor": "Prof. Xinhua Zhu",
-  "educationIntro": "I hold an MA in Chinese Culture and Language from the National University of Singapore and a BA in Chinese Linguistics and Literature from the University of Chinese Academy of Social Sciences.",
+  "educationIntro": "I hold an MA in Chinese Culture and Language from the National University of Singapore and a BA in Chinese Language and Literature from the University of Chinese Academy of Social Sciences.",
   "bio": "My research focuses on Chinese as a second language, with particular interests in bicultural identity integration, L2 selves, and reading and writing assessment. I combine qualitative inquiry with quantitative modelling to understand learners’ experiences and development over time.",
   "links": [
     {
@@ -26,7 +26,7 @@
     }
   ],
   "visit": {
-    "role": "Visiting Research Student",
+    "role": "Visiting International Research Student",
     "institution": "University of British Columbia",
     "dates": "Sep–Dec 2026",
     "endDate": "2026-12-31",
@@ -60,18 +60,18 @@
     },
     {
       "dates": "2021–2022",
-      "detailDates": "Aug 2021 – Jun 2022",
-      "degree": "MA in Chinese Culture and Language",
+      "detailDates": "Jul 2021 – Jul 2022",
+      "degree": "MA in Chinese Culture and Language (MACCL)",
       "institution": "National University of Singapore",
-      "detail": "GPA: 4.7/5.0 · Top 5%",
+      "detail": "Department of Chinese Studies · GPA: 4.7/5.0 · Top 5%",
       "qsRank": 10
     },
     {
       "dates": "2017–2021",
       "detailDates": "Sep 2017 – Jul 2021",
-      "degree": "BA in Chinese Linguistics and Literature",
+      "degree": "BA in Chinese Language and Literature",
       "institution": "University of Chinese Academy of Social Sciences",
-      "detail": "GPA: 3.58/4.0 · Top 10%"
+      "detail": "Department of Chinese Language and Literature · GPA: 3.58/4.0 · Top 10%"
     }
   ],
   "experience": [
@@ -79,14 +79,14 @@
       "dates": "2026",
       "institution": "University of British Columbia",
       "role": "Visiting International Research Student · Language and Literacy Education",
-      "description": "Multilingual literacy and home language practices, with Prof. Guofang Li.",
+      "description": "Bilingual literacy development and home language practices among multilingual learners, with Prof. Guofang Li.",
       "qsRank": 45
     },
     {
       "dates": "2022–2026",
       "institution": "The Hong Kong Polytechnic University",
-      "role": "Research Assistant · Longitudinal L2 Chinese writing project",
-      "description": "Mixed-methods research, school partnerships, and research team coordination.",
+      "role": "Research Assistant · Longitudinal L2 Chinese integrated writing project",
+      "description": "Longitudinal mixed-methods research, school-based data collection, and research team coordination.",
       "qsRank": 50
     },
     {
@@ -100,79 +100,80 @@
   "projects": [
     {
       "dates": "Sep–Dec 2026",
-      "title": "First-language proficiency and English reading comprehension among multilingual learners in British Columbia",
+      "title": "First-language proficiency and English reading comprehension among upper-primary multilingual learners in British Columbia",
       "institution": "University of British Columbia",
       "role": "Research Assistant",
       "supervisor": "Prof. Guofang Li",
       "funding": "Social Sciences and Humanities Research Council of Canada",
       "details": [
-        "Conduct parent and child interviews on bilingual literacy, home language practices, and family support.",
-        "Refine interview protocols and prepare Mandarin interview data for thematic analysis.",
-        "Observe language use and literacy instruction in mainstream and heritage-language classrooms."
+        "Conduct semi-structured interviews with parents and children on bilingual literacy development, home language practices, and family support for first- and second-language learning; transcribe and verify Mandarin interviews to prepare qualitative data for thematic analysis.",
+        "Help review and refine parent and child interview protocols to align with the project’s longitudinal mixed-methods design.",
+        "Conduct classroom observations of multilingual learners’ language use and literacy instruction in mainstream and heritage-language settings."
       ],
       "qsRank": 45
     },
     {
       "dates": "Oct 2022 – Dec 2026",
-      "title": "Motivation, engagement and task performance in L2 Chinese integrated writing: developmental trajectories and longitudinal associations",
+      "title": "Motivation, engagement and task performance in L2 Chinese integrated writing among non-Chinese-speaking students: developmental trajectories and longitudinal associations",
       "institution": "The Hong Kong Polytechnic University",
       "role": "Research Assistant · Team leader",
       "supervisor": "Prof. Xinhua Zhu",
       "funding": "General Research Fund, Research Grants Council of Hong Kong",
       "details": [
-        "Coordinate a multi-cohort longitudinal mixed-methods project, including pilot testing, instrument development, and school-based data collection.",
-        "Develop interview frameworks, semi-structured protocols and coding schemes; conduct English-language interviews with secondary CSL learners and thematic analysis in NVivo.",
-        "Coordinate questionnaires and writing tasks across four cohorts over four years, school liaison, writing assessment and dataset preparation.",
-        "Recruit and coordinate research assistants and student helpers, and prepare manuscripts."
+        "Coordinate implementation of a longitudinal mixed-methods project on L2 Chinese integrated writing, including pilot testing, instrument development, school-based data collection, and coordination of qualitative and quantitative analysis.",
+        "Lead the qualitative component: develop interview frameworks, semi-structured protocols and coding schemes; conduct in-depth interviews in English with secondary CSL learners and thematic analysis in NVivo.",
+        "Lead the quantitative component: design questionnaires and integrated writing tasks, coordinate data collection over four years, liaise with participating schools, assess writing tasks, clean datasets and assist with analysis.",
+        "Prepare journal manuscripts reporting the project’s qualitative and quantitative findings."
       ],
       "qsRank": 50
     },
     {
       "dates": "Oct 2022 – Aug 2023",
-      "title": "Undergraduate students’ peer- and self-initiated feedback on academic writing",
+      "title": "Undergraduate students’ peer- and self-initiated feedback on academic writing: feedback patterns and strategies",
       "institution": "The Hong Kong Polytechnic University",
       "role": "Full-time Research Assistant",
       "supervisor": "Prof. Xinhua Zhu",
       "details": [
-        "Supported literature review, data collection, interviews and focus groups.",
-        "Assisted with transcription and quantitative analysis, including CFA and SEM."
+        "Conducted literature reviews and assisted with data collection; carried out interviews, focus groups and transcription of audio recordings.",
+        "Assisted with data analysis, including confirmatory factor analysis and structural equation modelling, and other project research tasks."
       ],
       "qsRank": 50
     },
     {
       "dates": "May 2022 – Apr 2023",
-      "title": "Departmental Oral History Project (1976–1984)",
+      "title": "Department of Chinese Studies Oral History Project (1976–1984)",
       "institution": "National University of Singapore",
-      "role": "Part-time Research Assistant",
+      "role": "Research Assistant",
       "supervisor": "Prof. Ong Chang Woei & Dr. Lye Soo Choon",
       "details": [
-        "Designed oral-history interview procedures and independently interviewed five alumni about Chinese education in Singapore.",
-        "Transcribed, verified and organised interviews and coordinated project meetings."
+        "Designed interview procedures and protocols using oral-history methodology; independently conducted in-depth interviews with five Chinese Studies alumni on Chinese education and historical change in Singapore.",
+        "Transcribed, verified and organised interview materials; coordinated weekly project meetings and prepared meeting records."
       ],
       "qsRank": 10
     },
     {
       "dates": "Apr–Sep 2022",
-      "title": "Community care and religious responses to the COVID-19 pandemic in Singapore",
+      "title": "Cohesion, community care and confidence among Chinese temples, associations and other Asian religious institutions in Singapore: the impact of globalisation and religious responses to COVID-19",
       "institution": "Asia Research Institute, National University of Singapore",
-      "role": "Part-time Research Assistant",
+      "role": "Research Assistant",
       "supervisor": "Prof. Kenneth Dean",
       "funding": "Ministry of Culture, Community and Youth, Singapore",
       "details": [
-        "Assisted with questionnaires for temple managers and members, interviews, and field observations.",
-        "Contributed qualitative data and analysis to a research report on temples’ community responses during the pandemic."
+        "Helped design and distribute questionnaires to temple managers and members; interviewed temple managers, observed religious activities and online community engagement, and documented temple operations during the pandemic.",
+        "Collected and analysed qualitative data through participant observation and in-depth interviews during anthropological fieldwork, and contributed to the research report."
       ],
-      "qsRank": 10
+      "qsRank": 10,
+      "supervisorLabel": "Principal investigator: "
     },
     {
       "dates": "Nov 2018 – Nov 2019",
       "title": "Magic realism and contemporary Chinese novels",
       "institution": "University of Chinese Academy of Social Sciences",
       "role": "Research team leader",
-      "supervisor": "Prof. Zhongyi Chen",
+      "supervisor": "Prof. Zhongyi Chen (Chinese Academy of Social Sciences)",
       "details": [
-        "Led a five-member team and an independent study of magic realism in Chinese root-seeking literature.",
-        "Coordinated research meetings, synthesised findings, and completed a final oral defence."
+        "Led a five-member research team examining the transformation and reinterpretation of magic realism in contemporary Chinese literature.",
+        "Organised weekly research meetings, assigned tasks, tracked progress and synthesised team findings; completed the project and successfully defended it in a final oral presentation."
       ]
     }
   ],
@@ -224,7 +225,7 @@
     {
       "year": 2026,
       "authors": "Pang, W., Zhu, S., Zhu, X., & Zhang, Z.",
-      "title": "Bicultural Identity Integration and Ideal L2 Self: Influencing Chinese L2 Learning in Multilingual Hong Kong",
+      "title": "Bicultural identity integration and ideal L2 self: Influencing Chinese L2 learning in multilingual Hong Kong",
       "event": "AERA Annual Meeting",
       "location": "Los Angeles, USA",
       "dates": "8–12 April 2026",
@@ -234,7 +235,7 @@
     {
       "year": 2026,
       "authors": "Zhang, Z., Zhu, X., Xie, Z., & Pang, W.",
-      "title": "How Social Support Influence L2 Chinese Learning Motivation Among Hong Kong Ethnic Minority Students",
+      "title": "How social support influences L2 Chinese learning motivation among Hong Kong ethnic minority students",
       "event": "AERA Annual Meeting",
       "location": "Los Angeles, USA",
       "dates": "8–12 April 2026",
@@ -256,7 +257,7 @@
       "authors": "Pang, W., Zhu, S., & Yao, Y.",
       "title": "Impact of parental attitudes on self-beliefs and reading performance of L2 Chinese first-graders",
       "event": "AERA Annual Meeting",
-      "location": "Denver, USA",
+      "location": "Denver, Colorado, USA",
       "dates": "23–27 April 2025",
       "format": "Poster session",
       "status": "Presented"
@@ -266,7 +267,7 @@
       "authors": "Li, J., Zhu, S., Zhu, X., & Pang, W.",
       "title": "Advancing MA students’ feedback on writing through AI assistance: An intervention study",
       "event": "AERA Annual Meeting",
-      "location": "Denver, USA",
+      "location": "Denver, Colorado, USA",
       "dates": "23–27 April 2025",
       "format": "Roundtable session",
       "status": "Presented"
@@ -276,10 +277,10 @@
       "authors": "Dong, Y., Sun, Y., Zhu, X., Yao, Y., Zhang, Z., & Pang, W.",
       "title": "Ideal L2 self, engagement dimensions, and Chinese proficiency among young learners: Gendered moderation pathways",
       "event": "AERA Annual Meeting",
-      "location": "Toronto, Canada",
+      "location": "Toronto, Ontario, Canada",
       "dates": "14–18 April 2027",
-      "format": "Poster submission",
-      "status": "Under review"
+      "format": "Poster presentation",
+      "status": "Accepted"
     }
   ],
   "reviewing": [
@@ -297,14 +298,14 @@
       "title": "Introduction to Chinese Language Testing",
       "role": "Teaching Assistant",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Course coordination, assignment grading and student support. Course instructors: Prof. Tse Shek Kam & Prof. Xinhua Zhu."
+      "detail": "Assisted with course design and coordination, graded assignments and answered student questions. Course instructors: Prof. Tse Shek Kam & Prof. Xinhua Zhu."
     },
     {
       "dates": "Sep 2017 – Jan 2019",
       "title": "Science Education Program for Primary and Secondary School Students",
       "role": "Teacher",
       "institution": "Beijing",
-      "detail": "Weekly practical science lessons, experiments and individual feedback."
+      "detail": "Taught weekly hands-on science lessons to primary and junior secondary students in Beijing, guiding experiments and interactive learning tasks."
     }
   ],
   "leadership": [
@@ -312,13 +313,13 @@
       "dates": "Oct 2022 – present",
       "title": "Project and grant application support",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Supported over 20 research grant, teaching development and academic award applications, including three General Research Fund proposals; contributed to research design, literature reviews, methodology and budget planning."
+      "detail": "Coordinated and supported over 20 research grant, teaching development and academic award applications, including three General Research Fund proposals; contributed to research design, literature reviews, methodology and budget planning."
     },
     {
       "dates": "Oct 2022 – present",
-      "title": "Recruitment and research team coordination",
+      "title": "Research group management",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Recruited, onboarded and coordinated over 20 research assistants and student helpers across research projects."
+      "detail": "Recruited, onboarded and coordinated over 25 research assistants and student helpers across research projects."
     },
     {
       "dates": "Jan–Jun 2021",
@@ -336,7 +337,7 @@
       "dates": "Sep 2018 – Sep 2020",
       "title": "Student counselor",
       "institution": "Department of History, UCASS",
-      "detail": "Academic and pastoral support, student affairs and development activities."
+      "detail": "Provided academic and personal development support to History undergraduates, coordinated student affairs and communication between students and faculty, and organised student development activities."
     },
     {
       "dates": "Sep 2020 – Jun 2021",
@@ -357,42 +358,42 @@
   "awards": [
     {
       "year": "2026",
-      "title": "Research Student Attachment Programme",
+      "title": "Research Student Attachment Programme Funding",
       "institution": "The Hong Kong Polytechnic University"
     },
     {
-      "year": "2023",
-      "title": "Postgraduate Scholarship",
+      "year": "2023–2027",
+      "title": "Full PhD Scholarship",
       "institution": "The Hong Kong Polytechnic University"
     },
     {
       "year": "2022",
-      "title": "MACCL Outstanding Awards, AY2021/2022",
+      "title": "MA in Chinese Culture and Language (MACCL) Outstanding Award (5%)",
       "institution": "National University of Singapore"
     },
     {
       "year": "2021",
-      "title": "Excellent Graduation Thesis of Beijing",
+      "title": "Beijing Excellent Graduation Thesis (1‰)",
       "institution": "Beijing"
     },
     {
       "year": "2021",
-      "title": "Excellent Graduation Thesis",
+      "title": "Excellent Graduation Thesis (10%)",
       "institution": "UCASS"
     },
     {
       "year": "2020",
-      "title": "Outstanding Student Cadre",
+      "title": "Outstanding Student Cadre (1%)",
       "institution": "UCASS"
     },
     {
       "year": "2018 & 2019",
-      "title": "Third-class Scholarship",
+      "title": "Scholarship (10%)",
       "institution": "UCASS"
     },
     {
       "year": "2018 & 2019",
-      "title": "Outstanding Individual of the Communist Youth League",
+      "title": "Outstanding Individual of the Communist Youth League (1%)",
       "institution": "UCASS"
     }
   ],

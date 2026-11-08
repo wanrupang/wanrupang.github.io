@@ -10,7 +10,7 @@ Six static English pages and six Simplified Chinese counterparts, with a matchin
 
 - Home: biography and supervisor link, AERA conference photograph, compact research totals, scholarly profile logos and links below Contact, education and research interests in two columns, selected publications, academic experience and conference presentations.
 - Publications: compact research totals beside the page title, nine published papers and two manuscripts under review; DOI links and a copy-only original English BibTeX citation dialog. No BibTeX download links are shown.
-- Academic experience: research projects, visits, five completed conference presentations and one separately labelled submission under review.
+- Academic experience: research projects, visits, five completed conference presentations and one separately labelled accepted AERA 2027 poster presentation.
 - Teaching and social service: teaching, academic reviewing, professional experience and leadership.
 - Awards and honours: scholarships, research support and recognition.
 - Full CV: readable web CV. The public site no longer offers a CV PDF or a CV download link.
@@ -31,7 +31,9 @@ The preview server binds only to 127.0.0.1:4173. Set PORT if another local port 
 
 Edit content/profile.json for biography, education, projects, visits, teaching and awards; content/publications.json for papers; content/zh.json for corresponding Chinese text. Translated profile arrays must follow source order. Translated papers use stable IDs. scripts/render.mjs generates both languages.
 
-The homepage and Publications page share the same research totals. Publication and conference counts derive from Published and Presented records only. Under-review manuscripts and conference submissions are excluded. Google Scholar citations are a dated snapshot in profile.researchMetrics: 102 citations, checked on 2026-11-08. Update the count and date together after verifying the linked public profile. Keep this date in source data; the public statistics show no verification footnote.
+Factual corrections in both languages were reconciled with the owner-reviewed Simplified Chinese CV, CV-PANG Wanru-full-261106-简体中文版-v2.docx, on 2026-11-08. Apply fact changes to the English source and the matching Chinese text together, including the online Full CV generated from the same records. Conference status and original English titles belong only in profile.json; Chinese overrides translate the presentation text and inherit its status. Preserve the distinction between nine published papers, two manuscripts under review, five completed conference presentations and one accepted upcoming poster.
+
+The homepage and Publications page share the same research totals. Publication and conference counts derive from Published and Presented records only. Under-review manuscripts and upcoming accepted conference presentations are excluded. Google Scholar citations are a dated snapshot in profile.researchMetrics: 102 citations, checked on 2026-11-08. Update the count and date together after verifying the linked public profile. Keep this date in source data; the public statistics show no verification footnote.
 
 QS labels reproduce the original CV (CV-PANG Wanru-full-261106.docx): PolyU 50, NUS 10, UBC 45, Oxford 4, Peking 13, Zhejiang 47 and Leiden 119. The CV does not specify the ranking edition. Public pages show the numeric ranks without a source footnote. Universities without a CV-provided rank are left without a fabricated rank.
 
