@@ -77,8 +77,31 @@ for(const prefix of ['', 'zh/']){
   assert(html.includes('(QS #50)')&&html.includes('(QS #10)')&&html.includes('(QS #45)'),'Education and academic experience must show CV-provided QS ranks');
   const stats=html.match(/<section class="research-output"[\s\S]*?<\/section>/)?.[0]||'';
   assert(stats.includes('<strong>9</strong>')&&stats.includes('<strong>5</strong>')&&stats.includes('<strong>102</strong>'),'Output counts are 9 published papers, 5 presented conference items, 102 verified citations');
-  assert(stats.includes('datetime="2026-11-08"'),'Citation snapshot needs its verification date');
+  assert.equal(profile.researchMetrics.citationsChecked,'2026-11-08','Keep the citation verification date in source data');
+  const biography=html.match(/<div class="biography">[\s\S]*?<aside/)?.[0]||'';
+  const sidebar=html.match(/<aside class="contact-aside">[\s\S]*?<\/aside>/)?.[0]||'';
+  assert(!biography.includes('class="brand-icon '),'Profile logos must move out of the biography');
+  assert.equal((sidebar.match(/class="brand-icon /g)||[]).length,3,'All three platform links belong below Contact');
+  assert(sidebar.indexOf('class="email"')<sidebar.indexOf('class="profile-links contact-links"'),'Profile links must follow the email');
+  for(const page of ['index.html','publications.html']){
+    const content=await read('dist/'+prefix+page);
+    assert(!/output-note|rank-note|Citations checked|引用数据截至|QS ranks as listed in the CV|QS排名沿用原始简历标注/.test(content),'Remove both visible provenance notes');
+    assert(!/href="[^" ]*publications\.bib"|\bdownload(?:[ >])/.test(content),'Do not offer BibTeX downloads');
+    const output=content.match(/<section class="research-output"[\s\S]*?<\/section>/)?.[0]||'';
+    for(const count of [9,5,102]) assert(output.includes(`<strong>${count}</strong>`),'Both pages need matching research totals');
+  }
+  const publicationPage=await read('dist/'+prefix+'publications.html');
+  assert(publicationPage.includes('class="publication-metrics"'),'Publication totals need their heading-side position');
+  const cv=await read('dist/'+prefix+'cv.html');
+  for(const person of profile.peopleLinks){
+    assert(cv.includes(`class="person-link" href="${escape(person.url)}"`),`Official profile must be linked in CV: ${person.name}`);
+    // Every visible mention, including combined supervisor labels, gets its own link.
+    const visible=cv.split('<main')[1].split('</main>')[0];
+    const allMentions=visible.split(escape(person.name)).length-1;
+    const linkedMentions=visible.split(`>${escape(person.name)}<span class="sr-only">`).length-1;
+    assert.equal(linkedMentions,allMentions,`All visible mentions must be linked: ${person.name}`);
+  }
   const experience=await read('dist/'+prefix+'experience.html');
   for(const rank of [45,4,13,47,119]) assert(experience.includes(`(QS #${rank})`),'Academic visit ranks must match the source CV');
 }
-console.log('PASS: 12 bilingual pages, navigation, original titles, cropped-photo asset, supervisor link, CV-sourced QS ranks, verified research counts, under-review exclusions, and no public CV PDF.');
+console.log('PASS: 12 bilingual pages, platform links under Contact, homepage/publication totals, removed footnotes and downloads, verified faculty links, original titles, QS labels, under-review exclusions, and no public CV PDF.');

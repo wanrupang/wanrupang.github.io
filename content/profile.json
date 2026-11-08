@@ -425,5 +425,39 @@
     "citationsChecked": "2026-11-08",
     "citationSource": "https://scholar.google.com/citations?user=dtlnp1MAAAAJ&hl=en"
   },
-  "rankingSource": "QS ranks as listed in CV-PANG Wanru-full-261106.docx; ranking edition not specified."
+  "rankingSource": "QS ranks as listed in CV-PANG Wanru-full-261106.docx; ranking edition not specified.",
+  "peopleLinks": [
+    {
+      "name": "Prof. Xinhua Zhu",
+      "url": "https://www.polyu.edu.hk/lst/people/academic-staff/zhu-xinhua/"
+    },
+    {
+      "name": "Prof. Guofang Li",
+      "url": "https://migration.ubc.ca/profile/guofang-li/"
+    },
+    {
+      "name": "Dr. Miriam Driessen",
+      "url": "https://www.anthro.ox.ac.uk/people/miriam-driessen"
+    },
+    {
+      "name": "Prof. Ong Chang Woei",
+      "url": "https://fass.nus.edu.sg/cs/people/ong-chang-woei-%E7%8E%8B%E6%98%8C%E4%BC%9F/"
+    },
+    {
+      "name": "Dr. Lye Soo Choon",
+      "url": "https://fass.nus.edu.sg/cs-chinese/people/%E8%B5%96%E7%B4%A0%E6%98%A5/"
+    },
+    {
+      "name": "Prof. Kenneth Dean",
+      "url": "https://ari.nus.edu.sg/people/prof-kenneth-dean/"
+    },
+    {
+      "name": "Prof. Zhongyi Chen",
+      "url": "https://wenxue.ucass.edu.cn/info/1023/1216.htm"
+    },
+    {
+      "name": "Prof. Tse Shek Kam",
+      "url": "https://www.cacler2.hku.hk/en/research-team/tse-shek-kam/"
+    }
+  ]
 }

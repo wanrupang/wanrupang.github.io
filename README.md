@@ -8,8 +8,8 @@ Six static English pages and six Simplified Chinese counterparts, with a matchin
 
 ## Pages and content
 
-- Home: biography and supervisor link, AERA conference photograph, compact research totals, education and research interests in two columns, selected publications, academic experience and conference presentations.
-- Publications: nine published papers and two manuscripts under review; DOI links and original English BibTeX citations.
+- Home: biography and supervisor link, AERA conference photograph, compact research totals, scholarly profile logos and links below Contact, education and research interests in two columns, selected publications, academic experience and conference presentations.
+- Publications: compact research totals beside the page title, nine published papers and two manuscripts under review; DOI links and a copy-only original English BibTeX citation dialog. No BibTeX download links are shown.
 - Academic experience: research projects, visits, five completed conference presentations and one separately labelled submission under review.
 - Teaching and social service: teaching, academic reviewing, professional experience and leadership.
 - Awards and honours: scholarships, research support and recognition.
@@ -31,9 +31,11 @@ The preview server binds only to 127.0.0.1:4173. Set PORT if another local port 
 
 Edit content/profile.json for biography, education, projects, visits, teaching and awards; content/publications.json for papers; content/zh.json for corresponding Chinese text. Translated profile arrays must follow source order. Translated papers use stable IDs. scripts/render.mjs generates both languages.
 
-The homepage's publication and conference counts derive from Published and Presented records only. Under-review manuscripts and conference submissions are excluded. Google Scholar citations are a dated snapshot in profile.researchMetrics: 102 citations, checked on 2026-11-08. Update the count and date together after verifying the linked public profile.
+The homepage and Publications page share the same research totals. Publication and conference counts derive from Published and Presented records only. Under-review manuscripts and conference submissions are excluded. Google Scholar citations are a dated snapshot in profile.researchMetrics: 102 citations, checked on 2026-11-08. Update the count and date together after verifying the linked public profile. Keep this date in source data; the public statistics show no verification footnote.
 
-QS labels reproduce the original CV (CV-PANG Wanru-full-261106.docx): PolyU 50, NUS 10, UBC 45, Oxford 4, Peking 13, Zhejiang 47 and Leiden 119. The CV does not specify the ranking edition. Universities without a CV-provided rank are left without a fabricated rank.
+QS labels reproduce the original CV (CV-PANG Wanru-full-261106.docx): PolyU 50, NUS 10, UBC 45, Oxford 4, Peking 13, Zhejiang 47 and Leiden 119. The CV does not specify the ranking edition. Public pages show the numeric ranks without a source footnote. Universities without a CV-provided rank are left without a fabricated rank.
+
+Verified official teacher profile URLs live in profile.peopleLinks. The shared renderer links exact names in supervisor labels and in project, visit and teaching descriptions in both languages.
 
 The AERA photo is the owner's supplied original, displayed with CSS cropping of the blue side margins. Image provenance and platform logo sources are in assets/ASSET-SOURCES.txt.
 

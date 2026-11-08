@@ -30,7 +30,6 @@ html[lang="zh-Hans"] .conference-title{line-height:1.65}
 .portrait{width:100%;max-width:340px;height:auto;aspect-ratio:1.05;object-fit:cover;object-position:56% 50%}
 .institution-name{font-weight:650}
 .qs-rank{font-family:var(--sans);font-size:.77em;font-weight:400;color:var(--muted);white-space:nowrap}
-.rank-note{font:12px/1.6 var(--sans);color:var(--muted);margin-top:13px}
 .supervisor a{color:inherit;text-decoration-color:#a8b9af}
 .biography .research-bio{margin-top:20px}
 .research-output{width:fit-content;max-width:100%;border-top:1px solid var(--line);padding-top:16px;margin-top:24px}
@@ -43,6 +42,23 @@ html[lang="zh-Hans"] .conference-title{line-height:1.65}
 .output-stat>strong{font:400 29px/1.15 var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
 .output-stat>span:not(.sr-only){font-size:12px;line-height:1.45;margin-top:5px;max-width:158px}
 .output-stat:hover>strong{text-decoration:underline;text-underline-offset:4px}
-.output-note{font:11px/1.5 var(--sans);color:var(--muted);margin-top:9px}
 html[lang="zh-Hans"] .research-output h2{font-family:Arial,"Microsoft YaHei",sans-serif}
-@media(max-width:760px){.contact-aside{display:flex;flex-direction:column;gap:22px}.portrait{width:100%;max-width:340px}.output-stat{padding-inline:12px}.output-stat>strong{font-size:27px}.output-stat>span:not(.sr-only){font-size:11px;max-width:104px}.research-output{margin-top:23px}.qs-rank{font-size:.76em}.rank-note{font-size:11px}}
+@media(max-width:760px){.contact-aside{display:flex;flex-direction:column;gap:22px}.portrait{width:100%;max-width:340px}.output-stat{padding-inline:12px}.output-stat>strong{font-size:27px}.output-stat>span:not(.sr-only){font-size:11px;max-width:104px}.research-output{margin-top:23px}.qs-rank{font-size:.76em}}
+
+/* Keep homepage research totals opposite the contact/profile links. */
+.biography{display:flex;flex-direction:column;align-items:flex-start}
+.biography .research-bio{margin-bottom:30px}
+.biography .research-output{margin-top:auto}
+.contact-links{flex-direction:column;align-items:flex-start;gap:10px;margin-top:18px;font-size:15px}
+.contact-links .brand-icon{width:21px;height:21px}
+.person-link{color:inherit;text-decoration-color:#a8b9af}
+.person-link:hover{color:var(--accent)}
+.publication-metrics{flex:0 0 auto;max-width:100%}
+.publication-metrics .research-output{border-top:0;padding-top:0;margin-top:0}
+.publication-metrics .output-stat{padding-inline:15px}
+.publication-metrics .output-stat:first-child{padding-left:0}
+.publication-metrics .output-stat:last-child{padding-right:0}
+.publication-metrics .output-stat>strong{font-size:27px}
+.publication-metrics .output-stat>span:not(.sr-only){max-width:130px}
+@media(max-width:960px) and (min-width:761px){.page-heading:has(.publication-metrics){align-items:flex-start;flex-direction:column;gap:24px}}
+@media(max-width:760px){.contact-links{flex-direction:row;gap:12px 20px}.biography .research-bio{margin-bottom:24px}.publication-metrics .output-stat{padding-inline:12px}.publication-metrics .output-stat:first-child{padding-left:0}.publication-metrics .output-stat:last-child{padding-right:0}.publication-metrics .output-stat>span:not(.sr-only){max-width:104px}}
