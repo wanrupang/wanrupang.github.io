@@ -5,12 +5,12 @@
   "department": "Department of Language Science and Technology",
   "institution": "The Hong Kong Polytechnic University",
   "email": "wan-ru.pang@connect.polyu.hk",
-  "updated": "2026-11-08",
+  "updated": "2026-11-14",
   "siteUrl": "https://wanrupang.github.io/",
   "prettyUrls": false,
   "phdSupervisor": "Prof. Xinhua Zhu",
   "educationIntro": "I hold an MA in Chinese Culture and Language from the National University of Singapore and a BA in Chinese Language and Literature from the University of Chinese Academy of Social Sciences.",
-  "bio": "My research focuses on Chinese as a second language, with particular interests in bicultural identity integration, L2 selves, and reading and writing assessment. I combine qualitative inquiry with quantitative modelling to understand learners’ experiences and development over time.",
+  "bio": "My research focuses on second-language writing development, language learning motivation, and identity, with particular attention to language learning and development among multilingual and Chinese L2 learners in sociocultural contexts. I use mixed methods, combining qualitative interviews with quantitative analysis to examine Chinese L2 learners’ writing development and individual differences through linguistic features, individual psychological factors, and sociocultural influences.",
   "links": [
     {
       "label": "Google Scholar",
@@ -63,7 +63,7 @@
       "detailDates": "Jul 2021 – Jul 2022",
       "degree": "MA in Chinese Culture and Language (MACCL)",
       "institution": "National University of Singapore",
-      "detail": "Department of Chinese Studies · GPA: 4.7/5.0 · Top 5%",
+      "detail": "Department of Chinese Studies",
       "qsRank": 10
     },
     {
@@ -71,7 +71,7 @@
       "detailDates": "Sep 2017 – Jul 2021",
       "degree": "BA in Chinese Language and Literature",
       "institution": "University of Chinese Academy of Social Sciences",
-      "detail": "Department of Chinese Language and Literature · GPA: 3.58/4.0 · Top 10%"
+      "detail": "Department of Chinese Language and Literature"
     }
   ],
   "experience": [
@@ -108,7 +108,7 @@
       "details": [
         "Conduct semi-structured interviews with parents and children on bilingual literacy development, home language practices, and family support for first- and second-language learning; transcribe and verify Mandarin interviews to prepare qualitative data for thematic analysis.",
         "Help review and refine parent and child interview protocols to align with the project’s longitudinal mixed-methods design.",
-        "Conduct classroom observations of multilingual learners’ language use and literacy instruction in mainstream and heritage-language settings."
+        "Conduct classroom observations to document multilingual learners’ language use, reading comprehension support, classroom participation, and teacher feedback in English reading classes."
       ],
       "qsRank": 45
     },

@@ -16,6 +16,7 @@ const chinese=JSON.parse(await read('content/zh.json'));
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 for(const filename of [...pageNames,...pageNames.map(name=>'zh/'+name)]) {
   const html=await read(`dist/${filename}`);
+  assert.equal(await read(filename),html,'Published HTML must match the build output; edit content data instead of generated pages');
   const chinesePage=filename.startsWith('zh/');
   const counterpart=chinesePage?'../'+path.basename(filename):'zh/'+filename;
   assert(html.includes(`lang="${chinesePage?'zh-Hans':'en'}"`),'Correct page language');
@@ -112,6 +113,18 @@ for(const prefix of ['', 'zh/']){
   const publicationPage=await read('dist/'+prefix+'publications.html');
   assert(publicationPage.includes('class="publication-metrics"'),'Publication totals need their heading-side position');
   const cv=await read('dist/'+prefix+'cv.html');
+  const localizedProfile=prefix?chinese.profile:profile;
+  assert(html.includes(escape(localizedProfile.bio)),'Homepage biography must come from the corresponding content data');
+  assert(!/GPA|Top (?:5|10)%|前(?:5|10)%/.test(cv),'Do not restore the removed education GPA or class ranks');
+  assert(!cv.includes('张欣叶'),'Do not restore the superseded Chinese author spelling');
+  for(const page of ['index.html','publications.html','cv.html']){
+    const content=await read('dist/'+prefix+page);
+    for(const paper of papers.filter(p=>p.status==='Published'&&(page!=='index.html'||p.selected))){
+      const article=content.match(new RegExp('<article[^>]*id="'+paper.id+'"[^>]*>[\\s\\S]*?</article>'))?.[0]||'';
+      const names=prefix?chinese.papers[paper.id].authors:paper.authors;
+      for(const name of names)assert(article.includes(escape(name)),`Keep author names synchronized in ${prefix+page}: ${paper.id}`);
+    }
+  }
   for(const [personIndex, sourcePerson] of profile.peopleLinks.entries()){
     const person={...sourcePerson,name:prefix ? chinese.profile.peopleLinks[personIndex].name : sourcePerson.name};
     assert(cv.includes(`class="person-link" href="${escape(person.url)}"`),`Official profile must be linked in CV: ${person.name}`);
@@ -122,6 +135,8 @@ for(const prefix of ['', 'zh/']){
     assert.equal(linkedMentions,allMentions,`All visible mentions must be linked: ${person.name}`);
   }
   const experience=await read('dist/'+prefix+'experience.html');
+  const observation=localizedProfile.projects[0].details[2];
+  for(const content of [experience,cv])assert(content.includes(escape(observation)),'UBC classroom-observation wording must match the content data in both detail pages');
   for(const rank of [45,4,13,47,119]) assert(experience.includes(`(QS #${rank})`),'Academic visit ranks must match the source CV');
   const acceptedHeading=prefix?'会议报告 · 已接收':'Conference presentation · Accepted';
   const outdatedHeading=prefix?'会议投稿 · 审核中':'Conference submission · Under review';
