@@ -121,3 +121,18 @@ html[lang="zh-Hans"] .research-output h2{font-family:Arial,"Microsoft YaHei",san
   .biography .output-stat>span:not(.sr-only){font-size:11px;line-height:1.5;margin-top:6px}
 }
 @media(max-width:360px){.intro{grid-template-columns:minmax(0,1fr) 98px;column-gap:14px}.contact-aside .portrait{width:98px;height:123px}.profile-identity h1{font-size:34px}.profile-identity .chinese-name{font-size:23px}.contact-aside .email{font-size:13px}}
+
+/* Compact publication metadata: journal and indexing on the left, actions on the right. */
+.publication-meta{display:flex;align-items:baseline;justify-content:space-between;gap:6px 24px;margin-top:4px}
+.publication-meta .venue{flex:1 1 auto;min-width:0;margin:0;line-height:1.6}
+.venue-badge{display:inline-block;margin-inline-start:9px;padding:2px 7px;border:1px solid var(--line);border-radius:3px;background:#f3f7f4;color:var(--accent);font:600 12px/1.4 var(--sans);letter-spacing:.015em;white-space:nowrap;vertical-align:baseline}
+.publication-meta .paper-links{flex:0 0 auto;margin:0;gap:22px;font-size:16px;line-height:1.6;white-space:nowrap}
+.publication-meta .text-button{padding:0;font-size:inherit;line-height:inherit}
+.publication .paper-summary{margin-top:5px}
+@media(max-width:760px){
+  .publication-meta{flex-wrap:wrap;gap:5px 18px}
+  .publication-meta .venue{flex-basis:100%}
+  .publication-meta .paper-links{margin-left:auto;font-size:15px;gap:22px}
+  .venue-badge{font-size:11px;padding:2px 6px;margin-inline-start:7px}
+}
+@media print{.publication-meta{display:block}.venue-badge{font-size:8pt;border-color:#aaa;background:none;color:#000}}

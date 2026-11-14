@@ -9,7 +9,7 @@ Six static English pages and six Simplified Chinese counterparts, with a matchin
 ## Pages and content
 
 - Home: biography and supervisor link, AERA conference photograph, compact research totals, scholarly profile logos and links below Contact, education and research interests in two columns, selected publications, academic experience and conference presentations.
-- Publications: compact research totals beside the page title, nine published papers and two manuscripts under review; DOI links and a copy-only original English BibTeX citation dialog. No BibTeX download links are shown.
+- Publications: compact research totals beside the page title, nine published papers and two manuscripts under review; compact journal metadata with Paper/Cite actions aligned on the right and source-backed indexing badges; DOI links and a copy-only original English BibTeX citation dialog. No BibTeX download links are shown.
 - Academic experience: research projects, visits, five completed conference presentations and one separately labelled accepted AERA 2027 poster presentation.
 - Teaching and social service: teaching, academic reviewing, professional experience and leadership.
 - Awards and honours: scholarships, research support and recognition.
@@ -58,3 +58,7 @@ GitHub Pages is configured to publish main at /(root) with HTTPS. The old .opena
 ## Validation
 
 npm run check verifies all twelve pages and local links, original paper/conference titles, language switches, source-backed QS labels, research totals and absence of public CV downloads. For visual changes, inspect English and Chinese homepages at desktop and mobile widths, test the language switch and relevant navigation, and check browser console errors. Keep screenshots and diagnostic files outside the repository.
+
+## Publication indexing labels
+
+Published-paper indexing and JCR quartiles are stored in content/publications.json as indexing and jcrQuartile. They reproduce the owner’s Chinese CV (CV-PANG Wanru-full-261106-简体中文版-v2.docx): six SSCI Q1 papers, two SSCI Q2 papers and one ESCI paper with no stated quartile. The CV does not specify the JCR edition. These labels are not a claim about current-year rankings. Do not assign a quartile to the ESCI paper or indexing labels to conference presentations without a source. The shared paper renderer displays the same labels on English/Chinese home, publication and Full CV pages. Paper/Cite actions share the journal metadata row on desktop and wrap below it on narrow screens.

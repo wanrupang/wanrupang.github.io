@@ -8,8 +8,12 @@ const papers=JSON.parse(await read('content/publications.json'));
 assert.equal(new Set(papers.map(p=>p.id)).size,papers.length,'Paper IDs must be unique');
 for (const p of papers) {
   assert(p.authors.includes('Pang, W.'),'Every listed work must include the profile owner');
-  if(p.status==='Under review') assert(!p.year&&!p.doi&&!p.journal,'Under-review work must not carry a publication year or published metadata');
-  else assert(/^10\.\d{4,9}\/.+/.test(p.doi)&&p.year&&p.journal,'Published papers need complete identification');
+  if(p.status==='Under review') assert(!p.year&&!p.doi&&!p.journal&&!p.indexing&&!p.jcrQuartile,'Under-review work must not carry published metadata or journal ranking labels');
+  else {
+    assert(/^10\.\d{4,9}\/.+/.test(p.doi)&&p.year&&p.journal,'Published papers need complete identification');
+    assert(['SSCI','ESCI'].includes(p.indexing),'Published papers need CV-backed indexing labels');
+    assert(p.indexing==='ESCI'?!p.jcrQuartile:['Q1','Q2'].includes(p.jcrQuartile),'Only show the quartiles specified in the CV');
+  }
 }
 const pageNames=['index.html','publications.html','experience.html','teaching.html','awards.html','cv.html'];
 const chinese=JSON.parse(await read('content/zh.json'));
@@ -123,6 +127,9 @@ for(const prefix of ['', 'zh/']){
       const article=content.match(new RegExp('<article[^>]*id="'+paper.id+'"[^>]*>[\\s\\S]*?</article>'))?.[0]||'';
       const names=prefix?chinese.papers[paper.id].authors:paper.authors;
       for(const name of names)assert(article.includes(escape(name)),`Keep author names synchronized in ${prefix+page}: ${paper.id}`);
+      const label=paper.indexing+(paper.jcrQuartile?' · '+paper.jcrQuartile:'');
+      assert(article.includes(`>${escape(label)}</span>`),`Indexing badge must match shared paper data: ${prefix+page}/${paper.id}`);
+      assert(article.indexOf('class="publication-meta"')<article.indexOf('class="paper-links"')&&article.indexOf('class="paper-links"')<article.indexOf('class="paper-summary"'),'Paper/Cite must be in the journal metadata row above the summary');
     }
   }
   for(const [personIndex, sourcePerson] of profile.peopleLinks.entries()){
