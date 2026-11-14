@@ -98,7 +98,7 @@ for(const prefix of ['', 'zh/']){
   assert(html.includes('assets/wanru-pang-aera.jpg'),'New conference portrait must be used');
   assert(html.includes('https://www.polyu.edu.hk/lst/people/academic-staff/zhu-xinhua/'),'Supervisor must link to the supplied faculty page');
   assert(html.includes('class="institution-name"'),'University names must be bold');
-  assert(html.includes('(QS #50)')&&html.includes('(QS #10)')&&html.includes('(QS #45)'),'Education and academic experience must show CV-provided QS ranks');
+  assert(html.includes('QS #50')&&html.includes('QS #10')&&html.includes('QS #45'),'Education and academic experience must show CV-provided QS ranks');
   const stats=html.match(/<section class="research-output"[\s\S]*?<\/section>/)?.[0]||'';
   assert(stats.includes('<strong>9</strong>')&&stats.includes('<strong>5</strong>')&&stats.includes('<strong>102</strong>'),'Output counts are 9 published papers, 5 presented conference items, 102 verified citations');
   assert.equal(profile.researchMetrics.citationsChecked,'2026-11-08','Keep the citation verification date in source data');
@@ -144,7 +144,7 @@ for(const prefix of ['', 'zh/']){
   const experience=await read('dist/'+prefix+'experience.html');
   const observation=localizedProfile.projects[0].details[2];
   for(const content of [experience,cv])assert(content.includes(escape(observation)),'UBC classroom-observation wording must match the content data in both detail pages');
-  for(const rank of [45,4,13,47,119]) assert(experience.includes(`(QS #${rank})`),'Academic visit ranks must match the source CV');
+  for(const rank of [45,4,13,47,119]) assert(experience.includes(`QS #${rank}`),'Academic visit ranks must match the source CV');
   const acceptedHeading=prefix?'会议报告 · 已接收':'Conference presentation · Accepted';
   const outdatedHeading=prefix?'会议投稿 · 审核中':'Conference submission · Under review';
   for(const content of [experience,cv]){

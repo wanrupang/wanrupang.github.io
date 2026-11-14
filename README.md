@@ -62,3 +62,7 @@ npm run check verifies all twelve pages and local links, original paper/conferen
 ## Publication indexing labels
 
 Published-paper indexing and JCR quartiles are stored in content/publications.json as indexing and jcrQuartile. They reproduce the owner’s Chinese CV (CV-PANG Wanru-full-261106-简体中文版-v2.docx): six SSCI Q1 papers, two SSCI Q2 papers and one ESCI paper with no stated quartile. The CV does not specify the JCR edition. These labels are not a claim about current-year rankings. Do not assign a quartile to the ESCI paper or indexing labels to conference presentations without a source. The shared paper renderer displays the same labels on English/Chinese home, publication and Full CV pages. Paper/Cite actions share the journal metadata row on desktop and wrap below it on narrow screens.
+
+### Institution and CV layout
+
+School-based entries use `institutionFirst` in `content/profile.json`; QS ranks are shared across both languages and displayed using the same pale-green badge treatment as journal indexing. Ranks retain the original CV values, including repeated PolyU and NUS entries. Academic experience shows visits, research projects, then conferences. Full CV follows personal information (including existing methods/languages), education, Publication, academic experience, teaching/social service, and awards/honours. Edit the shared renderer rather than individual generated pages.

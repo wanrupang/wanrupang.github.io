@@ -110,7 +110,8 @@
         "Help review and refine parent and child interview protocols to align with the project’s longitudinal mixed-methods design.",
         "Conduct classroom observations to document multilingual learners’ language use, reading comprehension support, classroom participation, and teacher feedback in English reading classes."
       ],
-      "qsRank": 45
+      "qsRank": 45,
+      "institutionFirst": true
     },
     {
       "dates": "Oct 2022 – Dec 2026",
@@ -125,7 +126,8 @@
         "Lead the quantitative component: design questionnaires and integrated writing tasks, coordinate data collection over four years, liaise with participating schools, assess writing tasks, clean datasets and assist with analysis.",
         "Prepare journal manuscripts reporting the project’s qualitative and quantitative findings."
       ],
-      "qsRank": 50
+      "qsRank": 50,
+      "institutionFirst": true
     },
     {
       "dates": "Oct 2022 – Aug 2023",
@@ -137,7 +139,8 @@
         "Conducted literature reviews and assisted with data collection; carried out interviews, focus groups and transcription of audio recordings.",
         "Assisted with data analysis, including confirmatory factor analysis and structural equation modelling, and other project research tasks."
       ],
-      "qsRank": 50
+      "qsRank": 50,
+      "institutionFirst": true
     },
     {
       "dates": "May 2022 – Apr 2023",
@@ -149,7 +152,8 @@
         "Designed interview procedures and protocols using oral-history methodology; independently conducted in-depth interviews with five Chinese Studies alumni on Chinese education and historical change in Singapore.",
         "Transcribed, verified and organised interview materials; coordinated weekly project meetings and prepared meeting records."
       ],
-      "qsRank": 10
+      "qsRank": 10,
+      "institutionFirst": true
     },
     {
       "dates": "Apr–Sep 2022",
@@ -163,7 +167,8 @@
         "Collected and analysed qualitative data through participant observation and in-depth interviews during anthropological fieldwork, and contributed to the research report."
       ],
       "qsRank": 10,
-      "supervisorLabel": "Principal investigator: "
+      "supervisorLabel": "Principal investigator: ",
+      "institutionFirst": true
     },
     {
       "dates": "Nov 2018 – Nov 2019",
@@ -174,7 +179,8 @@
       "details": [
         "Led a five-member research team examining the transformation and reinterpretation of magic realism in contemporary Chinese literature.",
         "Organised weekly research meetings, assigned tasks, tracked progress and synthesised team findings; completed the project and successfully defended it in a final oral presentation."
-      ]
+      ],
+      "institutionFirst": true
     }
   ],
   "academicVisits": [
@@ -183,14 +189,16 @@
       "title": "Visiting International Research Student",
       "institution": "University of British Columbia",
       "detail": "Department of Language and Literacy Education · Prof. Guofang Li · Funded by PolyU",
-      "qsRank": 45
+      "qsRank": 45,
+      "institutionFirst": true
     },
     {
       "dates": "Aug–Oct 2021",
       "title": "Summer Tutorial Program",
       "institution": "University of Oxford",
       "detail": "Supervisor: Dr. Miriam Driessen",
-      "qsRank": 4
+      "qsRank": 4,
+      "institutionFirst": true
     },
     {
       "dates": "Jul 2021",
@@ -205,20 +213,23 @@
           "name": "Zhejiang University",
           "qsRank": 47
         }
-      ]
+      ],
+      "institutionFirst": true
     },
     {
       "dates": "Sep 2019 – Jan 2020",
       "title": "Exchange student, Faculty of Humanities",
       "institution": "Leiden University",
       "detail": "Funded by UCASS",
-      "qsRank": 119
+      "qsRank": 119,
+      "institutionFirst": true
     },
     {
       "dates": "Jul–Aug 2019",
       "title": "Summer School, Faculty of Philosophy",
       "institution": "National and Kapodistrian University of Athens",
-      "detail": "Funded by UCASS"
+      "detail": "Funded by UCASS",
+      "institutionFirst": true
     }
   ],
   "conferences": [
@@ -298,7 +309,9 @@
       "title": "Introduction to Chinese Language Testing",
       "role": "Teaching Assistant",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Assisted with course design and coordination, graded assignments and answered student questions. Course instructors: Prof. Tse Shek Kam & Prof. Xinhua Zhu."
+      "detail": "Assisted with course design and coordination, graded assignments and answered student questions. Course instructors: Prof. Tse Shek Kam & Prof. Xinhua Zhu.",
+      "institutionFirst": true,
+      "qsRank": 50
     },
     {
       "dates": "Sep 2017 – Jan 2019",
@@ -313,13 +326,17 @@
       "dates": "Oct 2022 – present",
       "title": "Project and grant application support",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Coordinated and supported over 20 research grant, teaching development and academic award applications, including three General Research Fund proposals; contributed to research design, literature reviews, methodology and budget planning."
+      "detail": "Coordinated and supported over 20 research grant, teaching development and academic award applications, including three General Research Fund proposals; contributed to research design, literature reviews, methodology and budget planning.",
+      "institutionFirst": true,
+      "qsRank": 50
     },
     {
       "dates": "Oct 2022 – present",
       "title": "Research group management",
       "institution": "The Hong Kong Polytechnic University",
-      "detail": "Recruited, onboarded and coordinated over 25 research assistants and student helpers across research projects."
+      "detail": "Recruited, onboarded and coordinated over 25 research assistants and student helpers across research projects.",
+      "institutionFirst": true,
+      "qsRank": 50
     },
     {
       "dates": "Jan–Jun 2021",
@@ -331,45 +348,56 @@
       "dates": "Apr 2019 – Sep 2020",
       "title": "Secretary of the Youth League Committee & President of the Student Union",
       "institution": "School of Humanities, UCASS",
-      "detail": "Coordinated academic, cultural and student engagement activities."
+      "detail": "Coordinated academic, cultural and student engagement activities.",
+      "institutionFirst": true
     },
     {
       "dates": "Sep 2018 – Sep 2020",
       "title": "Student counselor",
       "institution": "Department of History, UCASS",
-      "detail": "Provided academic and personal development support to History undergraduates, coordinated student affairs and communication between students and faculty, and organised student development activities."
+      "detail": "Provided academic and personal development support to History undergraduates, coordinated student affairs and communication between students and faculty, and organised student development activities.",
+      "institutionFirst": true
     },
     {
       "dates": "Sep 2020 – Jun 2021",
       "title": "International Program Coordinator & Belt and Road Program Intern",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     },
     {
       "dates": "Sep 2018 – Sep 2020",
       "title": "Volunteer",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     },
     {
       "dates": "Sep 2017 – Jun 2019",
       "title": "President of the Publicity Department, Music Club",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     }
   ],
   "awards": [
     {
       "year": "2026",
       "title": "Research Student Attachment Programme Funding",
-      "institution": "The Hong Kong Polytechnic University"
+      "institution": "The Hong Kong Polytechnic University",
+      "institutionFirst": true,
+      "qsRank": 50
     },
     {
       "year": "2023–2027",
       "title": "Full PhD Scholarship",
-      "institution": "The Hong Kong Polytechnic University"
+      "institution": "The Hong Kong Polytechnic University",
+      "institutionFirst": true,
+      "qsRank": 50
     },
     {
       "year": "2022",
       "title": "MA in Chinese Culture and Language (MACCL) Outstanding Award (5%)",
-      "institution": "National University of Singapore"
+      "institution": "National University of Singapore",
+      "institutionFirst": true,
+      "qsRank": 10
     },
     {
       "year": "2021",
@@ -379,22 +407,26 @@
     {
       "year": "2021",
       "title": "Excellent Graduation Thesis (10%)",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     },
     {
       "year": "2020",
       "title": "Outstanding Student Cadre (1%)",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     },
     {
       "year": "2018 & 2019",
       "title": "Scholarship (10%)",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     },
     {
       "year": "2018 & 2019",
       "title": "Outstanding Individual of the Communist Youth League (1%)",
-      "institution": "UCASS"
+      "institution": "UCASS",
+      "institutionFirst": true
     }
   ],
   "methods": [
@@ -460,5 +492,6 @@
       "name": "Prof. Tse Shek Kam",
       "url": "https://www.cacler2.hku.hk/en/research-team/tse-shek-kam/"
     }
-  ]
+  ],
+  "qsRank": 50
 }
